@@ -1,22 +1,19 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { useColorMode } from "@vueuse/core";
 
-const mode = useColorMode();
-const videos = ref(["cargosz.mp4", "cargoship.mp4", "cargo1.mp4"]); // Replace with your video filenames
+const videos = ref(["cargosz.mp4", "cargoship.mp4", "cargo1.mp4"]);
 const currentVideoIndex = ref(0);
 const fading = ref(false);
 
 const changeVideo = () => {
-  fading.value = true; // Start fade-out
+  fading.value = true;
   setTimeout(() => {
     currentVideoIndex.value =
-      (currentVideoIndex.value + 1) % videos.value.length; // Switch video
-    fading.value = false; // Start fade-in
-  }, 1000); // Match fade duration
+      (currentVideoIndex.value + 1) % videos.value.length;
+    fading.value = false;
+  }, 1000);
 };
 
-// Automatically switch videos every 5 seconds
 onMounted(() => {
   setInterval(changeVideo, 5000);
 });

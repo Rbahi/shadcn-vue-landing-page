@@ -72,12 +72,13 @@ const languageFlags: Record<string, any> = {
   fr: FrFlag,
   es: EsFlag,
 };
-const languageNames = {
+const languageNames: { [key: string]: string } = {
   en: "English",
-  ar: "العربية",
-  fr: "Français",
-  es: "Español",
+  ar: "Arabic",
+  fr: "French",
+  es: "Spanish",
 };
+
 </script>
 
 <template>
