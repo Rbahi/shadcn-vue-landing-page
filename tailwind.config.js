@@ -15,7 +15,7 @@ module.exports = {
 
   theme: {
     container: {
-      center: true,
+      center: "true",
       padding: "1.5rem",
       screens: {
         "2xl": "1400px",
@@ -23,6 +23,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        telegram: "#24A1DE",
+        whatsapp: "#25D366",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -56,6 +58,13 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -65,20 +74,36 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
         "collapsible-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-collapsible-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-collapsible-content-height)",
+          },
         },
         "collapsible-up": {
-          from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: 0 },
+          from: {
+            height: "var(--radix-collapsible-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       animation: {
@@ -89,5 +114,5 @@ module.exports = {
       },
     },
   },
-  plugins: [animate],
+  plugins: [animate, require("tailwindcss-animate")],
 };

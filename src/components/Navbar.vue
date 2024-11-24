@@ -1,17 +1,16 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-
 import { useColorMode } from "@vueuse/core";
+import { useI18n } from "vue-i18n"; // Import i18n
+
 const mode = useColorMode();
 mode.value = "dark";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -24,58 +23,61 @@ import {
 
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+} from "@/components/ui/select";
 
-import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
+import { Menu } from "lucide-vue-next";
+import InstagramIcon from "@/icons/InstagramIcon.vue";
+import SaFlag from "@/icons/saFlag.vue";
+import GbFlag from "@/icons/gbFlag.vue";
+import FrFlag from "@/icons/frFlag.vue";
+import EsFlag from "@/icons/esFlag.vue";
 import ToggleTheme from "./ToggleTheme.vue";
 
-interface RouteProps {
-  href: string;
-  label: string;
-}
+const { availableLocales, locale, t } = useI18n();
 
-interface FeatureProps {
-  title: string;
-  description: string;
-}
-
-const routeList: RouteProps[] = [
+const routeList = [
+  {
+    href: "#how-it-works",
+    label: "navbar.howItWorks", // Translation key
+  },
   {
     href: "#testimonials",
-    label: "Testimonials",
+    label: "navbar.testimonials", // Translation key
   },
   {
     href: "#team",
-    label: "Team",
+    label: "navbar.team", // Translation key
   },
   {
     href: "#contact",
-    label: "Contact",
+    label: "navbar.contact", // Translation key
   },
   {
     href: "#faq",
-    label: "FAQ",
+    label: "navbar.faq", // Translation key
   },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
-  },
-  {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
-  },
-  {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
-  },
-];
+const isOpen = ref(false);
 
-const isOpen = ref<boolean>(false);
+// Mapping for language codes to flag components
+const languageFlags: Record<string, any> = {
+  en: GbFlag,
+  ar: SaFlag,
+  fr: FrFlag,
+  es: EsFlag,
+};
+const languageNames = {
+  en: "English",
+  ar: "العربية",
+  fr: "Français",
+  es: "Español",
+};
 </script>
 
 <template>
@@ -83,26 +85,25 @@ const isOpen = ref<boolean>(false);
     :class="{
       'shadow-light': mode === 'light',
       'shadow-dark': mode === 'dark',
-      'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
+      'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-full flex justify-between items-center md:px-3 p-2 bg-card shadow-md': true,
     }"
   >
-    <a
-      href="/"
-      class="font-bold text-lg flex items-center"
-    >
-      <ChevronsDown
-        class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
+    <a href="/" class="font-bold text-lg flex items-center">
+      <img
+        :src="
+          mode == 'light' ? '/round-logo-white.png' : '/round-logo-black.png'
+        "
+        class="w-9 h-9 mr-2"
+        alt="Logo"
       />
-      ShadcnVue</a
-    >
+      FMI Trading Group
+    </a>
+
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
-          <Menu
-            @click="isOpen = true"
-            class="cursor-pointer"
-          />
+          <Menu @click="isOpen = true" class="cursor-pointer mr-2" />
         </SheetTrigger>
 
         <SheetContent
@@ -112,14 +113,17 @@ const isOpen = ref<boolean>(false);
           <div>
             <SheetHeader class="mb-4 ml-4">
               <SheetTitle class="flex items-center">
-                <a
-                  href="/"
-                  class="flex items-center"
-                >
-                  <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
+                <a href="/" class="flex items-center">
+                  <img
+                    :src="
+                      mode == 'light'
+                        ? '/round-logo-white.png'
+                        : '/round-logo-black.png'
+                    "
+                    class="w-9 h-9 mr-2"
+                    alt="Logo"
                   />
-                  ShadcnVue
+                  FMI Trading Group
                 </a>
               </SheetTitle>
             </SheetHeader>
@@ -132,19 +136,51 @@ const isOpen = ref<boolean>(false);
                 variant="ghost"
                 class="justify-start text-base"
               >
-                <a
-                  @click="isOpen = false"
-                  :href="href"
-                >
-                  {{ label }}
-                </a>
+                <a @click="isOpen = false" :href="href">{{ $t(label) }}</a>
               </Button>
             </div>
           </div>
 
           <SheetFooter class="flex-col sm:flex-col justify-start items-start">
+            <Select
+              v-model="$i18n.locale"
+              class="w-full bg-transparent text-base p-2 rounded-md"
+            >
+              <SelectTrigger class="w-full text-left p-2 bg-transparent mb-2">
+                <!-- Dynamically set the flag based on selected language -->
+                <component
+                  :is="languageFlags[locale]"
+                  class="w-9 h-9 inline-block mr-2"
+                />
+                <span class="text-sm font-semibold w-full text-left">
+                  {{ languageNames[locale] }}
+                </span>
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem
+                  v-for="lang in availableLocales"
+                  :key="lang"
+                  :value="lang"
+                >
+                  <component
+                    :is="languageFlags[lang]"
+                    class="w-6 h-6 inline-block mr-2"
+                  />
+                  {{
+                    lang === "en"
+                      ? "English"
+                      : lang === "ar"
+                      ? "العربية"
+                      : lang === "fr"
+                      ? "Français"
+                      : lang === "es"
+                      ? "Español"
+                      : t(`languages.${lang}`)
+                  }}
+                </SelectItem>
+              </SelectContent>
+            </Select>
             <Separator class="mb-2" />
-
             <ToggleTheme />
           </SheetFooter>
         </SheetContent>
@@ -155,35 +191,6 @@ const isOpen = ref<boolean>(false);
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger class="bg-card text-base">
-            Features
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
-              <img
-                src="https://www.radix-vue.com/logo.svg"
-                alt="Beach"
-                class="h-full w-full rounded-md object-cover"
-              />
-              <ul class="flex flex-col gap-2">
-                <li
-                  v-for="{ title, description } in featureList"
-                  :key="title"
-                  class="rounded-md p-3 text-sm hover:bg-muted"
-                >
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    {{ title }}
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    {{ description }}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button
               v-for="{ href, label } in routeList"
@@ -192,30 +199,63 @@ const isOpen = ref<boolean>(false);
               variant="ghost"
               class="justify-start text-base"
             >
-              <a :href="href">
-                {{ label }}
-              </a>
+              <a :href="href">{{ $t(label) }}</a>
             </Button>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
 
+    <!-- Icons -->
     <div class="hidden lg:flex">
+      <Select
+        v-model="$i18n.locale"
+        class="bg-transparent text-base p-2 rounded-md"
+      >
+        <SelectTrigger class="text-left p-2 h-9 bg-transparent">
+          <!-- Dynamically set the flag based on selected language -->
+          <component
+            :is="languageFlags[locale]"
+            class="w-7 h-7 inline-block mr-2"
+          />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectItem
+            v-for="lang in availableLocales"
+            :key="lang"
+            :value="lang"
+          >
+            <component
+              :is="languageFlags[lang]"
+              class="w-6 h-6 inline-block mr-2"
+            />
+            {{
+              lang === "en"
+                ? "English"
+                : lang === "ar"
+                ? "العربية"
+                : lang === "fr"
+                ? "Français"
+                : lang === "es"
+                ? "Español"
+                : t(`languages.${lang}`)
+            }}
+          </SelectItem>
+        </SelectContent>
+      </Select>
       <ToggleTheme />
-
       <Button
         as-child
         size="sm"
         variant="ghost"
-        aria-label="View on GitHub"
+        aria-label="Visit our Instagram"
       >
         <a
-          aria-label="View on GitHub"
-          href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
+          aria-label="Visit our Instagram"
+          href="https://instagram.com/fmitradinggroup"
           target="_blank"
         >
-          <GithubIcon class="size-5" />
+          <InstagramIcon class="size-5" />
         </a>
       </Button>
     </div>

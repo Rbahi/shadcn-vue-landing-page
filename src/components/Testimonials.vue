@@ -29,69 +29,66 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
+    image: "https://www.radix-vue.com/logo.svg",
+    name: "Benjamin J. Keller",
     userName: "Product Manager",
     comment:
-      "Wow Vue + Shadcn-Vue is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "This service has been a game-changer for our team. The quality of products and the efficiency of the shipping are unmatched. Highly recommend!",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "https://www.radix-vue.com/logo.svg",
     name: "Sophia Collins",
     userName: "Cybersecurity Analyst",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "Our experience with this company has been outstanding. Excellent product quality, and their customer support is always there when we need it. 10/10!",
     rating: 4.8,
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
+    image: "https://www.radix-vue.com/logo.svg",
+    name: "Mahmoud Abou Issam",
     userName: "Chief Technology Officer",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "The pricing and delivery time exceeded our expectations. A fantastic experience, and I’ll definitely continue working with this company in the future.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
+    image: "https://www.radix-vue.com/logo.svg",
+    name: "Sediq El Omari",
     userName: "Data Scientist",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Efficient, reliable, and high-quality products! I’ve been working with them for over a year, and their service has always been consistent. Truly a pleasure to collaborate with them.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
+    image: "https://www.radix-vue.com/logo.svg",
+    name: "Mohammed Agalai",
     userName: "IT Project Manager",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "Working with this team has been incredibly smooth. They handle everything from logistics to quality control, and the products always arrive on time and in perfect condition.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "https://www.radix-vue.com/logo.svg",
     name: "Isabella Reed",
     userName: "DevOps Engineer",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "We were impressed with the attention to detail in every order. The customer service is responsive and extremely helpful. Will continue using them for future projects.",
     rating: 4.9,
   },
 ];
 </script>
 
 <template>
-  <section
-    id="testimonials"
-    class="container py-24 sm:py-32"
-  >
+  <section id="testimonials" class="container py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        Testimonials
+        {{ $t("testimonials.sectionTitle") }}
       </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-        Hear What Our 1000+ Clients Say
+      <h2 class="text-3xl md:text-4xl text-center font-bold">
+        {{ $t("testimonials.sectionHeading") }}
       </h2>
     </div>
 
@@ -123,11 +120,8 @@ const reviewList: ReviewProps[] = [
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
                 <Avatar>
-                  <AvatarImage
-                    src="https://www.radix-vue.com/logo.svg"
-                    alt="@radix-vue"
-                  />
-                  <AvatarFallback>SV</AvatarFallback>
+                  <AvatarImage :src="review.image" alt="User Avatar" />
+                  <AvatarFallback>{{ review.name.charAt(0) }}</AvatarFallback>
                 </Avatar>
 
                 <div class="flex flex-col">

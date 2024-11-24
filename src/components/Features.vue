@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 import {
-  Paintbrush,
-  MessageCircle,
-  TabletSmartphone,
   BadgeCheck,
-  Goal,
-  PictureInPicture,
-  MousePointerClick,
-  Newspaper,
+  Factory,
+  DollarSign,
+  Languages,
+  Navigation,
+  Package,
+  Shield,
+  Users,
 } from "lucide-vue-next";
 
 interface FeaturesProps {
@@ -20,82 +19,81 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "tabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+    icon: "factory",
+    title: "features.factoryVisits.title",
+    description: "features.factoryVisits.description",
   },
   {
     icon: "badgeCheck",
-    title: "Social Proof",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+    title: "features.qualityAssurance.title",
+    description: "features.qualityAssurance.description",
   },
   {
-    icon: "goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+    icon: "dollarSign",
+    title: "features.competitivePricing.title",
+    description: "features.competitivePricing.description",
   },
   {
-    icon: "pictureInPicture",
-    title: "Strong Visuals",
-    description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+    icon: "languages",
+    title: "features.languageExpertise.title",
+    description: "features.languageExpertise.description",
   },
   {
-    icon: "mousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+    icon: "navigation",
+    title: "features.marketNavigation.title",
+    description: "features.marketNavigation.description",
   },
   {
-    icon: "newspaper",
-    title: "Clear Headline",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+    icon: "package",
+    title: "features.endToEndShipping.title",
+    description: "features.endToEndShipping.description",
+  },
+  {
+    icon: "shield",
+    title: "features.securePayments.title",
+    description: "features.securePayments.description",
+  },
+  {
+    icon: "users",
+    title: "features.clientSupport.title",
+    description: "features.clientSupport.description",
   },
 ];
 
 const iconMap: Record<
   string,
-  | typeof TabletSmartphone
   | typeof BadgeCheck
-  | typeof Goal
-  | typeof PictureInPicture
-  | typeof Paintbrush
-  | typeof MousePointerClick
-  | typeof MessageCircle
-  | typeof Newspaper
+  | typeof Factory
+  | typeof DollarSign
+  | typeof Languages
+  | typeof Navigation
+  | typeof Package
+  | typeof Shield
+  | typeof Users
 > = {
-  tabletSmartphone: TabletSmartphone,
   badgeCheck: BadgeCheck,
-  goal: Goal,
-  pictureInPicture: PictureInPicture,
-  paintbrush: Paintbrush,
-  mousePointerClick: MousePointerClick,
-  messageCircle: MessageCircle,
-  newspaper: Newspaper,
+  factory: Factory,
+  dollarSign: DollarSign,
+  languages: Languages,
+  navigation: Navigation,
+  package: Package,
+  shield: Shield,
+  users: Users,
 };
 </script>
 
 <template>
-  <section
-    id="features"
-    class="container py-24 sm:py-32"
-  >
+  <section id="features" class="container py-24 sm:py-32">
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-      Features
+      {{ $t("features.sectionTitle") }}
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      What Makes Us Different
+      {{ $t("features.sectionHeading") }}
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      {{ $t("features.sectionDescription") }}
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -115,12 +113,12 @@ const iconMap: Record<
             </div>
 
             <CardTitle>
-              {{ title }}
+              {{ $t(title) }}
             </CardTitle>
           </CardHeader>
 
           <CardContent class="text-muted-foreground text-center">
-            {{ description }}
+            {{ $t(description) }}
           </CardContent>
         </Card>
       </div>

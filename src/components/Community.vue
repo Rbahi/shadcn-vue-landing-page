@@ -9,14 +9,12 @@ import {
 
 import { Button } from "@/components/ui/button";
 
-import DiscordIcon from "@/icons/DiscordIcon.vue";
+import WhatsappIcon from "@/icons/WhatsappIcon.vue";
+import TelegramIcon from "@/icons/TelegramIcon.vue";
 </script>
 
 <template>
-  <section
-    id="community"
-    class="py-12"
-  >
+  <section id="community" class="py-12">
     <hr />
     <div class="container py-20 sm:py-20">
       <div class="lg:w-[60%] mx-auto">
@@ -25,30 +23,32 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
         >
           <CardHeader>
             <CardTitle class="text-4xl md:text-5xl font-bold">
-              <Component
-                class="w-20 h-20 m-auto mb-4"
-                :is="DiscordIcon"
-              />
-              Ready to join this
-              <span
-                class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
-              >
-                Community?
-              </span>
+              <div class="flex justify-center gap-10">
+                <Component
+                  class="w-20 h-20 mb-4 fill-whatsapp hover:scale-105 transition-all duration-300"
+                  :is="WhatsappIcon"
+                />
+                <Component
+                  class="w-20 h-20 mb-4 fill-telegram hover:scale-105 transition-all duration-300"
+                  :is="TelegramIcon"
+                />
+              </div>
+              {{ $t("community.latestDeals") }}
             </CardTitle>
           </CardHeader>
           <CardContent class="lg:w-[80%] text-xl text-muted-foreground">
-            Join our vibrant Discord community! Connect, share, and grow with
-            like-minded enthusiasts. Click to dive in! 🚀
+            {{ $t("community.description") }}
           </CardContent>
 
-          <CardFooter>
-            <Button as-child>
-              <a
-                href="https://discord.com/"
-                target="_blank"
-              >
-                Join Discord
+          <CardFooter class="gap-4">
+            <Button as-child class="bg-whatsapp/75 text-md hover:bg-whatsapp">
+              <a href="https://wa.me/1234567890" target="_blank">
+                {{ $t("community.joinWhatsApp") }}
+              </a>
+            </Button>
+            <Button as-child class="bg-telegram/75 text-md hover:bg-telegram">
+              <a href="https://t.me/yourgroup" target="_blank">
+                {{ $t("community.joinTelegram") }}
               </a>
             </Button>
           </CardFooter>

@@ -11,91 +11,79 @@ interface HowItWorksProps {
 
 const HowItWorksList: HowItWorksProps[] = [
   {
-    badgeTitle: "Contribute",
-    title: "Make a Difference with Every Contribution",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "roboto.png",
+    badgeTitle: "howItWorks.negotiate.badgeTitle",
+    title: "howItWorks.negotiate.title",
+    description: "howItWorks.negotiate.description",
+    image: "step1.jpeg", // Replace with relevant image
   },
   {
-    badgeTitle: "Discover",
-    title: "Create an Impact with Every Choice",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-    image: "runner.png",
+    badgeTitle: "howItWorks.inspect.badgeTitle",
+    title: "howItWorks.inspect.title",
+    description: "howItWorks.inspect.description",
+    image: "step2.jpeg", // Replace with relevant image
   },
   {
-    badgeTitle: "Innovate",
-    title: "Make Every Action Count",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-    image: "pacheco.png",
+    badgeTitle: "howItWorks.visit.badgeTitle",
+    title: "howItWorks.visit.title",
+    description: "howItWorks.visit.description",
+    image: "step3.jpeg", // Replace with relevant image
   },
   {
-    badgeTitle: "Collaborate",
-    title: "Tackle this challenge together",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "gamestation.png",
+    badgeTitle: "howItWorks.support.badgeTitle",
+    title: "howItWorks.support.title",
+    description: "howItWorks.support.description",
+    image: "step4.jpeg", // Replace with relevant image
   },
 ];
 </script>
 
 <template>
-  <section
-    id="features"
-    class="container py-24 sm:py-32"
-  >
-    <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        How It Works
+  <section id="how-it-works" class="container py-24 sm:py-32">
+    <div class="text-center mb-12">
+      <h2 class="text-lg text-primary tracking-wider mb-2">
+        {{ $t("howItWorks.sectionTitle") }}
       </h2>
-
-      <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Step-by-Step Process
+      <h2 class="text-3xl md:text-4xl font-bold">
+        {{ $t("howItWorks.sectionHeading") }}
       </h2>
     </div>
 
-    <div class="lg:w-[80%] mx-auto relative">
+    <div class="lg:w-[80%] mx-auto">
       <div
-        v-for="(
-          { badgeTitle, title, description, image }, index
-        ) in HowItWorksList"
+        v-for="({ badgeTitle, title, description, image }, index) in HowItWorksList"
         :key="title"
-        :class="[
-          'flex mb-8 items-center',
-          { ' flex-row-reverse': index % 2 !== 0 },
-        ]"
+        class="sm:flex sm:items-center mb-12"
+        :class="{ 'flex-row-reverse': index % 2 !== 0 }"
       >
-        <Card class="h-full bg-transparent border-0 shadow-none">
-          <CardHeader>
-            <div class="pb-4">
-              <Badge>{{ badgeTitle }}</Badge>
-            </div>
+        <!-- Text Content -->
+        <div class="sm:w-1/2 mb-8 sm:mb-0 sm:text-left" :class="{ 'sm:text-right': index % 2 !== 0 }">
+          <Card class="h-full bg-transparent border-0 shadow-none">
+            <CardHeader>
+              <div class="pb-4">
+                <Badge class="text-sm">
+                  {{ $t(badgeTitle) }}
+                </Badge>
+              </div>
+              <CardTitle>
+                {{ $t(title) }}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                {{ $t(description) }}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
 
-            <CardTitle>
-              {{ title }}
-            </CardTitle>
-          </CardHeader>
-
-          <CardContent class="text-muted-foreground w-[80%]">
-            {{ description }}
-          </CardContent>
-        </Card>
-
-        <img
-          :src="image"
-          :alt="`Image describing ${title} `"
-          className="w-[150px]  md:w-[250px] lg:w-[300px] mx-auto -scale-x-100 "
-        />
-        <div
-          :class="[
-            '-z-10 absolute right-0 w-44 h-72  lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',
-            {
-              'left-0': index % 2 !== 0,
-            },
-          ]"
-        ></div>
+        <!-- Image -->
+        <div class="sm:w-1/2 text-center sm:text-right">
+          <img
+            :src="image"
+            :alt="`Image for ${$t(title)}`"
+            class="w-[250px] md:w-[300px] mx-auto rounded-xl shadow-lg"
+          />
+        </div>
       </div>
     </div>
   </section>

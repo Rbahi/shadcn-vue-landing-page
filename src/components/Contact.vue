@@ -46,27 +46,23 @@ const handleSubmit = () => {
 </script>
 
 <template>
-  <section
-    id="contact"
-    class="container py-24 sm:py-32"
-  >
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <section id="contact" class="container py-24 md:py-32 max-w-[80%]">
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div>
         <div class="mb-4">
-          <h2 class="text-lg text-primary mb-2 tracking-wider">Contact</h2>
+          <h2 class="text-lg text-primary mb-2 tracking-wider">{{ $t('contact.title') }}</h2>
 
-          <h2 class="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+          <h2 class="text-3xl md:text-4xl font-bold">{{ $t('contact.connectWithUs') }}</h2>
         </div>
         <p class="mb-8 text-muted-foreground lg:w-5/6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          ipsam sint enim exercitationem ex autem corrupti quas tenetur
+          {{ $t('contact.description') }}
         </p>
 
         <div class="flex flex-col gap-4">
           <div>
             <div class="flex gap-2 mb-1">
               <Building2 />
-              <div class="font-bold">Find Us</div>
+              <div class="font-bold">{{ $t('contact.findUs') }}</div>
             </div>
 
             <div>742 Evergreen Terrace, Springfield, IL 62704</div>
@@ -75,30 +71,31 @@ const handleSubmit = () => {
           <div>
             <div class="flex gap-2 mb-1">
               <Phone />
-              <div class="font-bold">Call Us</div>
+              <div class="font-bold">{{ $t('contact.callUs') }}</div>
             </div>
 
-            <div>+1 (619) 123-4567</div>
+            <div>+86 151 5719 0084</div>
+            <div>+212</div>
           </div>
 
           <div>
             <div class="flex gap-2 mb-1">
               <Mail />
-              <div class="font-bold">Mail Us</div>
+              <div class="font-bold">{{ $t('contact.mailUs') }}</div>
             </div>
 
-            <div>leomirandadev@gmail.com</div>
+            <div>contact@fmitradinggroup.com</div>
           </div>
 
           <div>
             <div class="flex gap-2">
               <Clock />
-              <div class="font-bold">Visit Us</div>
+              <div class="font-bold">{{ $t('contact.visitUs') }}</div>
             </div>
 
             <div>
-              <div>Monday - Friday</div>
-              <div>8AM - 4PM</div>
+              <div>{{ $t('contact.mondayToFriday') }}</div>
+              <div>{{ $t('contact.officeHours') }}</div>
             </div>
           </div>
         </div>
@@ -108,61 +105,62 @@ const handleSubmit = () => {
       <Card class="bg-muted/60 dark:bg-card">
         <CardHeader class="text-primary text-2xl"> </CardHeader>
         <CardContent>
-          <form
-            @submit.prevent="handleSubmit"
-            class="grid gap-4"
-          >
+          <form @submit.prevent="handleSubmit" class="grid gap-4">
             <div class="flex flex-col md:flex-row gap-8">
               <div class="flex flex-col w-full gap-1.5">
-                <Label for="first-name">First Name</Label>
+                <Label for="first-name">{{ $t('contact.firstName') }}</Label>
                 <Input
                   id="first-name"
                   type="text"
-                  placeholder="Leopoldo"
+                  placeholder=""
                   v-model="contactForm.firstName"
                 />
               </div>
 
               <div class="flex flex-col w-full gap-1.5">
-                <Label for="last-name">Last Name</Label>
+                <Label for="last-name">{{ $t('contact.lastName') }}</Label>
                 <Input
                   id="last-name"
                   type="text"
-                  placeholder="Miranda"
+                  placeholder=""
                   v-model="contactForm.lastName"
                 />
               </div>
             </div>
 
             <div class="flex flex-col gap-1.5">
-              <Label for="email">Email</Label>
+              <Label for="email">{{ $t('contact.email') }}</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="leomirandadev@gmail.com"
+                placeholder="example@mail.com"
                 v-model="contactForm.email"
               />
             </div>
 
             <div class="flex flex-col gap-1.5">
-              <Label for="subject">Subject</Label>
+              <Label for="subject">{{ $t('contact.subject') }}</Label>
 
               <Select v-model="contactForm.subject">
                 <SelectTrigger>
-                  <SelectValue placeholder="Select a subject" />
+                  <SelectValue placeholder="{{ $t('contact.selectSubject') }}" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectItem value="Web Development">
-                      Web Development
+                    <SelectItem value="Product Sourcing">
+                      {{ $t('contact.productSourcing') }}
                     </SelectItem>
-                    <SelectItem value="Mobile Development">
-                      Mobile Development
+                    <SelectItem value="Quality Assurance">
+                      {{ $t('contact.qualityAssurance') }}
                     </SelectItem>
-                    <SelectItem value="Figma Design"> Figma Design </SelectItem>
-                    <SelectItem value="REST API "> REST API </SelectItem>
-                    <SelectItem value="FullStack Project">
-                      FullStack Project
+                    <SelectItem value="Shipping Solutions">
+                      {{ $t('contact.shippingSolutions') }}
+                    </SelectItem>
+                    <SelectItem value="Payment Handling">
+                      {{ $t('contact.paymentHandling') }}
+                    </SelectItem>
+                    <SelectItem value="General Inquiry">
+                      {{ $t('contact.generalInquiry') }}
                     </SelectItem>
                   </SelectGroup>
                 </SelectContent>
@@ -170,27 +168,24 @@ const handleSubmit = () => {
             </div>
 
             <div class="flex flex-col gap-1.5">
-              <Label for="message">Message</Label>
+              <Label for="message">{{ $t('contact.message') }}</Label>
               <Textarea
                 id="message"
-                placeholder="Your message..."
+                placeholder="{{ $t('contact.messagePlaceholder') }}"
                 rows="5"
                 v-model="contactForm.message"
               />
             </div>
 
-            <Alert
-              v-if="invalidInputForm"
-              variant="destructive"
-            >
+            <Alert v-if="invalidInputForm" variant="destructive">
               <AlertCircle class="w-4 h-4" />
-              <AlertTitle>Error</AlertTitle>
+              <AlertTitle>{{ $t('contact.error') }}</AlertTitle>
               <AlertDescription>
-                There is an error in the form. Please check your input.
+                {{ $t('contact.errorMessage') }}
               </AlertDescription>
             </Alert>
 
-            <Button class="mt-4">Send message</Button>
+            <Button class="mt-4">{{ $t('contact.submit') }}</Button>
           </form>
         </CardContent>
 
