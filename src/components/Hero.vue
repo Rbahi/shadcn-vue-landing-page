@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const videos = ref(["cargosz.mp4", "cargoship.mp4", "cargo1.mp4"]);
+const videos = ref(["/hero-videos/cargosz.mp4", "/hero-videos/cargoship.mp4", "/hero-videos/cargo1.mp4"]);
 const currentVideoIndex = ref(0);
 const fading = ref(false);
 

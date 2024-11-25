@@ -14,25 +14,25 @@ const HowItWorksList: HowItWorksProps[] = [
     badgeTitle: "howItWorks.negotiate.badgeTitle",
     title: "howItWorks.negotiate.title",
     description: "howItWorks.negotiate.description",
-    image: "step1.jpeg", // Replace with relevant image
+    image: "/how-it-works/step1.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.inspect.badgeTitle",
     title: "howItWorks.inspect.title",
     description: "howItWorks.inspect.description",
-    image: "step2.jpeg", // Replace with relevant image
+    image: "/how-it-works/step2.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.visit.badgeTitle",
     title: "howItWorks.visit.title",
     description: "howItWorks.visit.description",
-    image: "step3.jpeg", // Replace with relevant image
+    image: "/how-it-works/step3.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.support.badgeTitle",
     title: "howItWorks.support.title",
     description: "howItWorks.support.description",
-    image: "step4.jpeg", // Replace with relevant image
+    image: "/how-it-works/step4.jpeg", // Replace with relevant image
   },
 ];
 </script>
@@ -50,13 +50,18 @@ const HowItWorksList: HowItWorksProps[] = [
 
     <div class="lg:w-[80%] mx-auto">
       <div
-        v-for="({ badgeTitle, title, description, image }, index) in HowItWorksList"
+        v-for="(
+          { badgeTitle, title, description, image }, index
+        ) in HowItWorksList"
         :key="title"
         class="sm:flex sm:items-center mb-12"
         :class="{ 'flex-row-reverse': index % 2 !== 0 }"
       >
         <!-- Text Content -->
-        <div class="sm:w-1/2 mb-8 sm:mb-0 sm:text-left" :class="{ 'sm:text-right': index % 2 !== 0 }">
+        <div
+          class="sm:w-1/2 mb-8 sm:mb-0 sm:text-left"
+          :class="{ 'sm:text-right': index % 2 !== 0 }"
+        >
           <Card class="h-full bg-transparent border-0 shadow-none">
             <CardHeader>
               <div class="pb-4">

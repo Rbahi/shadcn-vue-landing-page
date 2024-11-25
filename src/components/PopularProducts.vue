@@ -4,46 +4,42 @@ import "@selemondev/vue3-marquee/dist/style.css";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 
 interface productsProps {
-  icon: string;
   image: string;
   name: string;
 }
 
 const products: productsProps[] = [
   {
-    icon: "crown",
-    image: "pacheco.png",
-    name: "products.acmebrand",
+    image: "/products/fire-extinguisher.png",
+    name: "products.fireExtinguisher",
   },
   {
-    icon: "vegan",
-    image: "pacheco.png",
-    name: "products.acmelogo",
+    image: "/products/phone-screen.png",
+    name: "products.phoneScreen",
   },
   {
-    icon: "ghost",
-    image: "pacheco.png",
-    name: "products.acmesponsor",
+    image: "/products/angle-grinder.png",
+    name: "products.angleGrinder",
   },
   {
-    icon: "puzzle",
-    image: "pacheco.png",
-    name: "products.acmeipsum",
+    image: "/products/fire-extinguisher.png",
+    name: "products.safetyBoot",
   },
   {
-    icon: "squirrel",
-    image: "pacheco.png",
-    name: "products.acme",
+    image: "/products/machine.png",
+    name: "products.machine",
   },
   {
-    icon: "cookie",
-    image: "pacheco.png",
-    name: "products.accmee",
+    image: "/products/suitcase.png",
+    name: "products.suitcase",
   },
   {
-    icon: "drama",
-    image: "pacheco.png",
-    name: "products.acmetech",
+    image: "/products/jewelry.png",
+    name: "products.jewelry",
+  },
+  {
+    image: "/products/phone-accessories.png",
+    name: "products.phoneAccessories",
   },
 ];
 </script>
@@ -59,10 +55,10 @@ const products: productsProps[] = [
 
     <div class="mx-auto">
       <Marquee
-        class="gap-[1rem] md:gap-[3rem]"
+        class="gap-[1rem] md:gap-[2.5rem]"
         :pauseOnHover="true"
         :fade="true"
-        innerClassName="gap-[1rem] md:gap-[3rem]"
+        innerClassName="gap-[1rem] md:gap-[2.5rem] py-1"
       >
         <Card
           v-for="{ image, name } in products"
@@ -75,7 +71,8 @@ const products: productsProps[] = [
               <img
                 :src="image"
                 alt=""
-                class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.05]"
+                loading="lazy"
+                class="w-full aspect-square object-cover saturate-50 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.02]"
               />
             </div>
             <CardTitle class="py-3 text-center text-sm md:text-2xl">

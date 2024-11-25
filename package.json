@@ -1,6 +1,6 @@
 {
   "name": "fmi-vue",
-  "description": "FMI landing page template using Vue, Shadcn/Vue + TypeScript + Tailwind CSS.",
+  "description": "FMI landing page using Vue, Shadcn/Vue + TypeScript + Tailwind CSS.",
   "version": "0.1.1",
   "author": {
     "name": "Ayoub Rbahi"

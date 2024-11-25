@@ -94,7 +94,7 @@ const languageNames: { [key: string]: string } = {
     :class="{
       'shadow-light': mode === 'light',
       'shadow-dark': mode === 'dark',
-      'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-full flex justify-between items-center md:px-3 p-2 bg-card shadow-md': true,
+      'w-[90%] md:w-[70%] lg:w-[85%] xl:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-full flex justify-between items-center md:px-3 p-2 bg-card shadow-md': true,
     }"
   >
     <a href="/" class="font-bold text-lg flex items-center">

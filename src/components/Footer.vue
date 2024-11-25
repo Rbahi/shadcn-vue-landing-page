@@ -1,53 +1,56 @@
 <script setup lang="ts">
-import { ChevronsDown } from "lucide-vue-next";
+import { useColorMode } from "@vueuse/core";
 import Separator from "./ui/separator/Separator.vue";
+const mode = useColorMode();
 </script>
 
 <template>
-  <footer
-    id="footer"
-    class="container py-24 pb-16 sm:py-32 sm:pb-24"
-  >
+  <footer id="footer" class="container py-24 pb-16 sm:py-32 sm:pb-24">
     <div class="p-10 bg-muted/50 dark:bg-card border rounded-2xl">
       <div
         class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8"
       >
         <div class="col-span-full xl:col-span-2">
-          <a
-            href="#"
-            class="flex font-bold items-center"
-          >
-            <ChevronsDown
-              class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
+          <a href="#" class="flex font-bold items-center">
+            <img
+              :src="
+                mode == 'light'
+                  ? '/round-logo-white.png'
+                  : '/round-logo-black.png'
+              "
+              class="w-9 h-9 mr-2"
+              alt="Logo"
             />
 
-            <h3 class="text-2xl">Shadcn-Vue</h3>
+            <h3 class="text-2xl">FMI Trading Group</h3>
           </a>
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contact</h3>
+
           <div>
             <a
-              href="#"
+              href="https://wa.me/8615157190084"
               class="opacity-60 hover:opacity-100"
             >
-              Github
+              WhatsApp
             </a>
           </div>
 
           <div>
             <a
-              href="#"
+              href="https://m.me/131814057009755"
               class="opacity-60 hover:opacity-100"
             >
-              Twitter
+              Facebook
             </a>
           </div>
 
           <div>
             <a
-              href="#"
+              href="https://ig.me/m/fmitradinggroup"
+              target="_blank"
               class="opacity-60 hover:opacity-100"
             >
               Instagram
@@ -56,60 +59,19 @@ import Separator from "./ui/separator/Separator.vue";
         </div>
 
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              iOS
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Android
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Help</h3>
           <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
+            <a href="#contact" class="opacity-60 hover:opacity-100">
               Contact Us
             </a>
           </div>
 
           <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
+            <a href="#faq" class="opacity-60 hover:opacity-100"> FAQ </a>
           </div>
 
           <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
+            <a href="#testimonials" class="opacity-60 hover:opacity-100">
               Feedback
             </a>
           </div>
@@ -119,28 +81,21 @@ import Separator from "./ui/separator/Separator.vue";
           <h3 class="font-bold text-lg">Socials</h3>
           <div>
             <a
-              href="#"
+              target="_blank"
+              href="https://www.facebook.com/fmitradinggroup"
               class="opacity-60 hover:opacity-100"
             >
-              Twitch
+              Facebook
             </a>
           </div>
 
           <div>
             <a
-              href="#"
+              target="_blank"
+              href="https://www.instagram.com/fmitradinggroup"
               class="opacity-60 hover:opacity-100"
             >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              Instagram
             </a>
           </div>
         </div>
@@ -149,14 +104,14 @@ import Separator from "./ui/separator/Separator.vue";
       <Separator class="my-6" />
       <section className="">
         <h3 class="">
-          &copy; 2024 Designed and developed by
-          <a
+          © 2025<a
             target="_blank"
-            href="https://github.com/leoMirandaa"
+            href="https://instagram.com/"
             className="text-primary transition-all border-primary hover:border-b-2"
           >
-            Leo Miranda
+            FMI Trading Group Ltd.
           </a>
+          All right Reserved
         </h3>
       </section>
     </div>

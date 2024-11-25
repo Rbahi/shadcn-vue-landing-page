@@ -74,7 +74,7 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/250?img=58",
     firstName: "Sofian",
-    lastName: "Essahli",
+    lastName: "Essbiti",
     positions: ["Vue Fronted Developer", "Creator Of This Website"],
     socialNetworks: [
       {
@@ -108,7 +108,7 @@ const { t } = useI18n(); // Using translations
 </script>
 
 <template>
-  <section id="team" class="container lg:w-[75%] py-24 sm:py-32">
+  <section id="team" class="container xl:w-[75%] lg:w-[85%] py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
         {{ t("team.sectionTitle") }}
