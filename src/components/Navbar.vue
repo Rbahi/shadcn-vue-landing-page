@@ -1,10 +1,19 @@
 <script lang="ts" setup>
-import { ref } from "vue";
+import { ref, watchEffect } from "vue";
 import { useColorMode } from "@vueuse/core";
 import { useI18n } from "vue-i18n"; // Import i18n
 
 const mode = useColorMode();
-mode.value = "dark";
+const systemDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+watchEffect(() => {
+  mode.value = systemDarkMode.matches ? "dark" : "light";
+});
+
+// Listen for real-time system theme changes
+systemDarkMode.addEventListener("change", (e) => {
+  mode.value = e.matches ? "dark" : "light";
+});
 
 import {
   NavigationMenu,
@@ -78,7 +87,6 @@ const languageNames: { [key: string]: string } = {
   fr: "French",
   es: "Spanish",
 };
-
 </script>
 
 <template>

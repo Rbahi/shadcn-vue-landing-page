@@ -16,6 +16,23 @@ const i18n = createI18n({
   messages, // Use the messages imported from locales
 });
 
+// Detect and apply the user's device theme
+const userTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+  ? "dark"
+  : "light";
+
+// Apply the detected theme to the HTML element
+document.documentElement.classList.add(userTheme);
+
+// Listen for system theme changes
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    const newTheme = e.matches ? "dark" : "light";
+    document.documentElement.classList.remove("dark", "light");
+    document.documentElement.classList.add(newTheme);
+  });
+
 // Create the Vue app
 const app = createApp(App);
 
