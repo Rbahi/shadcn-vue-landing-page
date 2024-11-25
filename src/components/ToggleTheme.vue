@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watchEffect } from "vue";
+import { watchEffect } from "vue";
 import { useColorMode } from "@vueuse/core";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-vue-next";
