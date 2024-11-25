@@ -22,8 +22,8 @@ const products: productsProps[] = [
     name: "products.angleGrinder",
   },
   {
-    image: "/products/fire-extinguisher.png",
-    name: "products.safetyBoot",
+    image: "/products/safety-equipment.png",
+    name: "products.safetyEquipment",
   },
   {
     image: "/products/machine.png",

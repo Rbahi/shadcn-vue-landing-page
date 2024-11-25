@@ -31,7 +31,7 @@ export const messages = {
       fireExtinguisher: "Fire Extinguishers",
       phoneScreen: "Phone Screens",
       angleGrinder: "Angle Grinders",
-      safetyBoot: "Safety Boots",
+      safetyEquipment: "Safety Equipment",
       machine: "Machines",
       suitcase: "Suitcases",
       jewelry: "Jewelry",
