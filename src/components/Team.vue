@@ -30,16 +30,15 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/team/ayoub.jpg",
     firstName: "Ayoub",
     lastName: "Rbahi",
-    positions: ["UI/UX Designer"],
+    positions: ["Quality Assurance Specialist", "Operations Coordinator"],
     socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+      // {
+      //   name: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
       {
         name: "Whatsapp",
         url: "https://wa.me/8618758922201",
@@ -51,16 +50,15 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageUrl: "/team/yassine.jpg",
     firstName: "Yassine",
     lastName: "Cherif-Riahi",
-    positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
+    positions: ["Logistics Expert", "Master of Supply Chain Optimization"],
     socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+      // {
+      //   name: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
       {
         name: "Whatsapp",
         url: "https://wa.me/8615157190084",
@@ -74,13 +72,13 @@ const teamList: TeamProps[] = [
   {
     imageUrl: "https://i.pravatar.cc/250?img=58",
     firstName: "Sofian",
-    lastName: "Essbiti",
-    positions: ["Vue Fronted Developer", "Creator Of This Website"],
+    lastName: "Es-Sebyity",
+    positions: ["Minister of Operations in Morocco", "Regional Director"],
     socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+      // {
+      //   name: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
       {
         name: "Whatsapp",
         url: "https://wa.me/212648752082",

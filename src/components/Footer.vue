@@ -31,6 +31,7 @@ const mode = useColorMode();
 
           <div>
             <a
+              target="_blank"
               href="https://wa.me/8615157190084"
               class="opacity-60 hover:opacity-100"
             >
@@ -40,6 +41,7 @@ const mode = useColorMode();
 
           <div>
             <a
+              target="_blank"
               href="https://m.me/131814057009755"
               class="opacity-60 hover:opacity-100"
             >
@@ -49,8 +51,8 @@ const mode = useColorMode();
 
           <div>
             <a
+            target="_blank"
               href="https://ig.me/m/fmitradinggroup"
-              target="_blank"
               class="opacity-60 hover:opacity-100"
             >
               Instagram
@@ -111,7 +113,7 @@ const mode = useColorMode();
           >
             FMI Trading Group Ltd.
           </a>
-          All right Reserved
+          All Rights Reserved
         </h3>
       </section>
     </div>
