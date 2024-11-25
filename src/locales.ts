@@ -177,7 +177,7 @@ export const messages = {
       title: "Connect With Us",
       connectWithUs: "Connect With Us",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam sint enim exercitationem ex autem corrupti quas tenetur",
+        "We are here to support your business needs with reliable sourcing, quality assurance, and efficient logistics. Reach out to us to discuss how we can help.",
       firstName: "First Name",
       lastName: "Last Name",
       email: "Email",
@@ -420,7 +420,7 @@ export const messages = {
       title: "Conéctate con Nosotros",
       connectWithUs: "Conéctate con Nosotros",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam sint enim exercitationem ex autem corrupti quas tenetur",
+        "Estamos aquí para apoyar las necesidades de su negocio con aprovisionamiento confiable, garantía de calidad y logística eficiente. Contáctenos para discutir cómo podemos ayudar.",
       firstName: "Nombre",
       lastName: "Apellido",
       email: "Correo Electrónico",
@@ -665,7 +665,7 @@ export const messages = {
       title: "Contactez-Nous",
       connectWithUs: "Connectez-vous avec Nous",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam sint enim exercitationem ex autem corrupti quas tenetur",
+        "Nous sommes ici pour soutenir les besoins de votre entreprise avec un approvisionnement fiable, une assurance qualité et une logistique efficace. Contactez-nous pour discuter de la façon dont nous pouvons vous aider.",
       firstName: "Prénom",
       lastName: "Nom",
       email: "Email",
@@ -902,7 +902,8 @@ export const messages = {
     contact: {
       title: "تواصل معنا",
       connectWithUs: "تواصل معنا",
-      description: "لوريم إيبسوم دولور سيت أميت... ",
+      description:
+        "نحن هنا لدعم احتياجات عملك من خلال التوريد الموثوق، وضمان الجودة، واللوجستيات الفعّالة. تواصل معنا لمناقشة كيفية مساعدتك.",
       firstName: "الاسم الأول",
       lastName: "اسم العائلة",
       email: "البريد الإلكتروني",
