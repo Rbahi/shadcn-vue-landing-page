@@ -69,7 +69,7 @@ const handleSubmit = () => {
               <div class="font-bold">{{ $t("contact.findUs") }}</div>
             </div>
 
-            <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+            <div>Wuai District B, building 47, unit 6, office 718.</div>
           </div>
 
           <div>

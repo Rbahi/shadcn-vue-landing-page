@@ -67,6 +67,10 @@ const teamList: TeamProps[] = [
         name: "Instagram",
         url: "https://www.instagram.com/yassine.sheriff",
       },
+      {
+        name: "Wechat",
+        url: "https://www.instagram.com/yassine.sheriff",
+      },
     ],
   },
   {
