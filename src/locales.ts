@@ -243,11 +243,11 @@ export const messages = {
   },
   es: {
     navbar: {
-      howItWorks: "Cómo Funciona",
-      testimonials: "Testimonios",
+      howItWorks: "Proceso",
+      testimonials: "Opiniones",
       team: "Equipo",
       contact: "Contacto",
-      faq: "Preguntas Frecuentes",
+      faq: "FAQ",
     },
     hero: {
       badge: {
@@ -260,100 +260,99 @@ export const messages = {
         slogan: "Tu Socio Confiable para el Comercio Global",
       },
       description:
-        "Nos especializamos en obtener productos de calidad de China, gestionando la logística y ofreciendo soluciones de pago y envío sin problemas.",
+        "Especialistas en productos de calidad desde China, con soluciones logísticas y de pago sin complicaciones.",
       buttons: {
         getStarted: "Comenzar",
-        mostPopular: "Productos Más Populares",
+        mostPopular: "Productos Populares",
       },
     },
     popularProducts: {
-      title: "Nuestros Productos Más Populares",
+      title: "Productos Populares",
     },
     products: {
       fireExtinguisher: "Extintores",
       phoneScreen: "Pantallas de Teléfono",
-      angleGrinder: "Amoladoras de Ángulo",
+      angleGrinder: "Amoladoras",
       safetyEquipment: "Equipo de Seguridad",
       machine: "Máquinas",
       suitcase: "Maletas",
       jewelry: "Joyería",
-      phoneAccessories: "Accesorios de Teléfono",
+      phoneAccessories: "Accesorios",
     },
     benefits: {
       sectionTitle: "Beneficios",
-      sectionHeading: "Desbloquea el Potencial de China con FMI Trading Group",
+      sectionHeading: "Potencia tus Compras con FMI Trading Group",
       sectionDescription:
-        "FMI Trading Group simplifica tu viaje por China, ofreciendo negociación experta, control de calidad meticuloso y logística sin problemas. Confía en nosotros para cerrar la brecha entre la ambición global y la experiencia local.",
+        "Simplificamos tu acceso al mercado chino con negociación experta, control de calidad y logística eficiente. Tu socio confiable para cerrar la brecha entre mercados globales y locales.",
       testimonialHeading: "Lo que Dicen Nuestros Clientes",
       testimonialQuote:
-        '"La atención al detalle de FMI Trading Group y su compromiso con la excelencia superaron nuestras expectativas. Su proceso de control de calidad aseguró que cada producto cumpliera con nuestros estándares, ahorrándonos tiempo y dinero. ¡Realmente un cambio radical para nuestro negocio!"',
+        '"La atención al detalle y compromiso de FMI superaron nuestras expectativas. Su control de calidad garantizó productos a la altura de nuestros estándares, ahorrándonos tiempo y dinero. ¡Un cambio radical para nuestro negocio!"',
       testimonialAuthor:
         "Alex Turner, Gerente de Importaciones, TechSphere Inc.",
       expertNegotiation: {
         title: "Negociación Experta",
         description:
-          "Aprovechamos nuestra experiencia para asegurar los mejores precios, garantizando valor sin comprometer la calidad.",
+          "Aseguramos los mejores precios, ofreciendo valor sin comprometer la calidad.",
       },
       qualityAssurance: {
         title: "Aseguramiento de Calidad",
         description:
-          "Nuestro exhaustivo proceso de control de calidad y visitas a fábricas garantizan la fiabilidad de cada producto.",
+          "Control exhaustivo y visitas a fábricas para garantizar productos confiables.",
       },
       paymentSolutions: {
-        title: "Soluciones de Pago",
+        title: "Pagos Fáciles",
         description:
-          "Simplificamos la facilitación de pagos, ofreciendo soluciones seguras y sin complicaciones para transacciones internacionales.",
+          "Facilitamos transacciones internacionales seguras y sin complicaciones.",
       },
       shippingSolutions: {
-        title: "Soluciones de Envío",
+        title: "Envíos Sin Problemas",
         description:
-          "Ofrecemos opciones de envío aéreo, marítimo y exprés adaptadas, asegurando que tus productos lleguen a tiempo y en perfectas condiciones.",
+          "Opciones de envío aéreo, marítimo y exprés para entregas a tiempo.",
       },
     },
     features: {
       sectionTitle: "Características",
-      sectionHeading: "Lo que Nos Hace Diferentes",
+      sectionHeading: "Qué Nos Hace Únicos",
       sectionDescription:
-        "Descubre lo que nos distingue y cómo nuestros servicios pueden ayudarte a prosperar en un mercado global competitivo.",
+        "Descubre cómo nuestros servicios te ayudarán a destacar en un mercado global competitivo.",
       factoryVisits: {
         title: "Visitas a Fábricas",
         description:
-          "Realizamos visitas a fábricas in situ para garantizar asociaciones confiables y verificación directa de la calidad de producción.",
+          "Inspecciones in situ para verificar calidad y crear asociaciones confiables.",
       },
       qualityAssurance: {
-        title: "Aseguramiento de Calidad",
+        title: "Control de Calidad",
         description:
-          "Revisiones exhaustivas de calidad en cada etapa para entregar productos que cumplan con tus expectativas.",
+          "Supervisión en cada etapa para cumplir con tus estándares.",
       },
       competitivePricing: {
         title: "Precios Competitivos",
         description:
-          "Negociación experta para asegurar los mejores precios para tu negocio, ahorrando costos sin comprometer la calidad.",
+          "Negociación experta para ahorrar costos sin sacrificar calidad.",
       },
       languageExpertise: {
-        title: "Expertise Lingüística",
+        title: "Experiencia Lingüística",
         description:
-          "Comunicación fluida en chino, ayudando a cerrar la brecha entre clientes y proveedores.",
+          "Comunicación fluida en chino, conectando clientes y proveedores.",
       },
       marketNavigation: {
-        title: "Navegación de Mercado",
+        title: "Guía de Mercado",
         description:
-          "Orientación en el dinámico mercado chino con años de experiencia y conocimiento comprobado.",
+          "Orientación en el dinámico mercado chino gracias a nuestra experiencia.",
       },
       endToEndShipping: {
-        title: "Envío de Extremo a Extremo",
+        title: "Envío Integral",
         description:
-          "Soluciones logísticas eficientes, desde la obtención hasta el envío, para asegurar una entrega sin problemas a tu puerta.",
+          "Soluciones logísticas completas, desde el abastecimiento hasta la entrega.",
       },
       securePayments: {
         title: "Pagos Seguros",
-        description:
-          "Facilitación de pagos confiables y seguros, dándote tranquilidad en tus transacciones.",
+        description: "Transacciones confiables y protegidas.",
       },
       clientSupport: {
-        title: "Soporte al Cliente",
+        title: "Atención Personalizada",
         description:
-          "Recibimos y asistimos a clientes internacionales que visitan China, ofreciendo soporte personalizado durante todo su recorrido.",
+          "Asistencia integral para clientes internacionales en cada paso.",
       },
     },
     howItWorks: {
@@ -386,110 +385,105 @@ export const messages = {
     },
     testimonials: {
       sectionTitle: "Testimonios",
-      sectionHeading: "Escucha lo que Dicen Más de 100 Clientes",
+      sectionHeading: "Lo que Dicen Más de 100 Clientes",
     },
     team: {
       sectionTitle: "Equipo",
-      sectionSubtitle: "El Equipo Soñado de la Empresa",
+      sectionSubtitle: "Los Expertos Detrás del Éxito",
       positions: {
         "Logistics Expert": "Experto en Logística",
         "Master of Supply Chain Optimization":
-          "Maestro en Optimización de la Cadena de Suministro",
+          "Maestro en la Cadena de Suministro",
         "Minister of Operations in Morocco":
-          "Ministro de Operaciones en Marruecos",
+          "Director de Operaciones en Marruecos",
         "Regional Director": "Director Regional",
-        "Quality Assurance Specialist": "Especialista en Garantía de Calidad",
+        "Quality Assurance Specialist": "Especialista en Calidad",
         "Operations Coordinator": "Coordinador de Operaciones",
       },
     },
     socials: {
       LinkedIn: "LinkedIn",
-      Whatsapp: "Whatsapp",
+      Whatsapp: "WhatsApp",
       Wechat: "WeChat",
       Instagram: "Instagram",
       X: "X",
     },
     community: {
-      latestDeals: "¿Interesado en las ÚLTIMAS OFERTAS que tenemos?",
+      latestDeals: "¿Interesado en Ofertas Exclusivas?",
       description:
-        "¡Únete a nuestros Grupos en WhatsApp y Telegram! ¡Mantente atento a nuestras actualizaciones para ver cualquier Gran Oferta que te interese! 🚀",
+        "Únete a nuestros grupos de WhatsApp y Telegram para estar al día con nuestras mejores ofertas. 🚀",
       joinWhatsApp: "Unirse a WhatsApp",
       joinTelegram: "Unirse a Telegram",
     },
     contact: {
       title: "Conéctate con Nosotros",
-      connectWithUs: "Conéctate con Nosotros",
+      connectWithUs: "Conéctate",
       description:
-        "Estamos aquí para apoyar las necesidades de su negocio con aprovisionamiento confiable, garantía de calidad y logística eficiente. Contáctenos para discutir cómo podemos ayudar.",
+        "Ofrecemos soluciones de aprovisionamiento, control de calidad y logística. Contáctanos para más información.",
       firstName: "Nombre",
       lastName: "Apellido",
-      email: "Correo Electrónico",
+      email: "Correo",
       subject: "Asunto",
       message: "Mensaje",
-      selectSubject: "Selecciona un asunto",
-      productSourcing: "Abastecimiento de Productos",
-      qualityAssurance: "Aseguramiento de Calidad",
-      shippingSolutions: "Soluciones de Envío",
-      paymentHandling: "Manejo de Pagos",
+      selectSubject: "Seleccionar Asunto",
+      productSourcing: "Abastecimiento",
+      qualityAssurance: "Calidad",
+      shippingSolutions: "Envío",
+      paymentHandling: "Pagos",
       generalInquiry: "Consulta General",
-      messagePlaceholder: "Tu mensaje...",
+      messagePlaceholder: "Escribe tu mensaje...",
       error: "Error",
-      errorMessage:
-        "Hay un error en el formulario. Por favor, revisa tu entrada.",
-      submit: "Enviar mensaje",
-      findUs: "Encuéntranos",
+      errorMessage: "Por favor, revisa los campos del formulario.",
+      submit: "Enviar",
+      findUs: "Ubicación",
       callUs: "Llámanos",
-      mailUs: "Envíanos un correo",
+      mailUs: "Correo",
       visitUs: "Visítanos",
-      mondayToFriday: "Lunes - Viernes",
+      mondayToFriday: "Lunes a Viernes",
       officeHours: "8AM - 4PM",
     },
     faq: {
-      title: "PREGUNTAS FRECUENTES",
+      title: "FAQ",
       commonQuestions: "Preguntas Comunes",
-      stillHaveQuestions: "¿Aún tienes preguntas?",
+      stillHaveQuestions: "¿Más dudas?",
       contactUs: "Contáctanos",
       questions: {
         "item-1": "¿Qué métodos de pago aceptan?",
         "item-2": "¿Hacen envíos por aire y mar?",
-        "item-3": "¿En qué regiones operan?",
-        "item-4": "¿Pueden manejar el despacho de aduanas?",
+        "item-3": "¿Dónde operan?",
+        "item-4": "¿Manejan despacho de aduanas?",
         "item-5": "¿Cuánto tarda el envío?",
-        "item-6": "¿Proveen seguimiento para los envíos?",
-        "item-7": "¿Qué tipos de productos pueden importar o exportar?",
-        "item-8": "¿Ofrecen seguro para los envíos?",
-        "item-9":
-          "¿Pueden asistir con el abastecimiento de productos de China?",
+        "item-6": "¿Ofrecen seguimiento de envíos?",
+        "item-7": "¿Qué productos pueden importar/exportar?",
+        "item-8": "¿Proveen seguro de envío?",
+        "item-9": "¿Ayudan con abastecimiento en China?",
         "item-10": "¿Manejan pedidos al por mayor?",
       },
       answers: {
         "item-1":
-          "Aceptamos varios métodos de pago, incluidos transferencias bancarias, cartas de crédito y pagos seguros en línea. Contáctanos para discutir la mejor opción para tus necesidades.",
+          "Aceptamos transferencias bancarias, cartas de crédito y pagos seguros online.",
         "item-2":
-          "Sí, ofrecemos opciones de envío tanto aéreo como marítimo. La elección depende de tu tiempo de entrega, presupuesto y la naturaleza de los productos que se transporten.",
-        "item-3":
-          "Operamos a nivel global, con un enfoque fuerte en Asia, Medio Oriente, Europa y América del Norte. Sin embargo, podemos manejar envíos casi a cualquier ubicación mundial.",
-        "item-4":
-          "Sí, ofrecemos servicios completos de despacho de aduanas para asegurar que tus productos cumplan con todas las regulaciones locales.",
+          "Sí, enviamos por aire y mar según tus necesidades y presupuesto.",
+        "item-3": "Operamos globalmente con enfoque en Asia, Europa y América.",
+        "item-4": "Sí, ofrecemos servicios completos de despacho aduanero.",
         "item-5":
-          "Los tiempos de envío varían dependiendo del modo de transporte y destino. Los envíos aéreos tardan generalmente de 3 a 7 días, mientras que los envíos marítimos pueden tardar entre 2 y 6 semanas.",
-        "item-6":
-          "Sí, proporcionamos seguimiento para todos los envíos para que puedas monitorear tus productos durante todo el proceso de envío.",
+          "Depende del transporte: aéreo (3-7 días), marítimo (2-6 semanas).",
+        "item-6": "Sí, damos seguimiento a todos los envíos.",
         "item-7":
-          "Manejamos una amplia variedad de productos, incluyendo electrónicos, textiles, maquinaria y productos de consumo. Avísanos tus requisitos para categorías de productos específicas.",
-        "item-8":
-          "Sí, podemos organizar un seguro para tus envíos para proteger tus productos contra pérdidas o daños durante el tránsito.",
+          "Manejamos electrónicos, textiles, maquinaria y más. Consúltanos.",
+        "item-8": "Sí, organizamos seguro contra pérdida o daño.",
         "item-9":
-          "Sí, nos especializamos en el abastecimiento de productos de alta calidad directamente de fabricantes en China. También realizamos controles de calidad para asegurar que los productos cumplan con tus estándares.",
+          "Sí, abastecemos productos de calidad desde China con control riguroso.",
         "item-10":
-          "Sí, tenemos experiencia en manejar pedidos al por mayor y podemos ofrecer precios competitivos y soluciones logísticas eficientes.",
+          "Sí, manejamos pedidos al por mayor con logística eficiente.",
       },
     },
   },
+
   fr: {
     navbar: {
-      howItWorks: "Comment Ça Marche",
-      testimonials: "Témoignages",
+      howItWorks: "Fonctionnement",
+      testimonials: "Avis",
       team: "Équipe",
       contact: "Contact",
       faq: "FAQ",
@@ -497,109 +491,105 @@ export const messages = {
     hero: {
       badge: {
         new: "Nouveau",
-        message: "Commandez des Échantillons Maintenant !",
+        message: "Commandez Vos Échantillons Maintenant !",
       },
       title: {
-        welcome: "Bienvenue sur",
+        welcome: "Bienvenue chez",
         brand: "FMI Trading Group",
-        slogan: "Votre Partenaire de Confiance pour le Commerce Mondial",
+        slogan: "Votre Partenaire Fiable pour le Commerce Mondial",
       },
       description:
-        "Nous sommes spécialisés dans l'approvisionnement de produits de qualité en provenance de Chine, la gestion de la logistique et la fourniture de solutions de paiement et d'expédition sans tracas.",
+        "Nous sommes experts en approvisionnement de produits de qualité en Chine, gestion logistique et solutions de paiement et d'expédition simplifiées.",
       buttons: {
         getStarted: "Commencer",
-        mostPopular: "Produits les Plus Populaires",
+        mostPopular: "Produits Populaires",
       },
     },
     popularProducts: {
-      title: "Nos Produits les Plus Populaires",
+      title: "Produits Populaires",
     },
     products: {
       fireExtinguisher: "Extincteurs",
       phoneScreen: "Écrans de Téléphone",
-      angleGrinder: "Meuleuses d'Angle",
-      safetyEquipment: "Équipement de Sécurité",
+      angleGrinder: "Meuleuses",
+      safetyEquipment: "Équipements de Sécurité",
       machine: "Machines",
       suitcase: "Valises",
       jewelry: "Bijoux",
-      phoneAccessories: "Accessoires de Téléphone",
+      phoneAccessories: "Accessoires Téléphone",
     },
     benefits: {
       sectionTitle: "Avantages",
       sectionHeading:
-        "Déverrouillez le Potentiel de la Chine avec FMI Trading Group",
+        "Exploitez le Potentiel de la Chine avec FMI Trading Group",
       sectionDescription:
-        "FMI Trading Group simplifie votre parcours en Chine en offrant une expertise en négociation, un contrôle qualité rigoureux et une logistique fluide. Faites-nous confiance pour combler l'écart entre l'ambition mondiale et l'expertise locale.",
-      testimonialHeading: "Ce Que Disent Nos Clients",
+        "Simplifiez votre expérience en Chine avec notre expertise en négociation, contrôles qualité rigoureux et logistique fiable. FMI Trading comble l'écart entre vos ambitions globales et les opportunités locales.",
+      testimonialHeading: "Témoignages de Nos Clients",
       testimonialQuote:
-        "\"L'attention aux détails de FMI Trading Group et son engagement envers l'excellence ont dépassé nos attentes. Leur processus de contrôle qualité a garanti que chaque produit répondait à nos normes, nous faisant gagner du temps et de l'argent. Vraiment un changement radical pour notre entreprise !\"",
+        "L'attention aux détails et l'engagement de FMI Trading ont dépassé nos attentes. Leur contrôle qualité nous a permis de gagner du temps et de l'argent. Un véritable atout pour notre entreprise !",
       testimonialAuthor:
-        "Alex Turner, Responsable des Importations, TechSphere Inc.",
+        "Alex Turner, Responsable Importations, TechSphere Inc.",
       expertNegotiation: {
         title: "Négociation Experte",
         description:
-          "Nous utilisons notre expertise pour garantir les meilleurs prix, offrant ainsi une valeur optimale sans compromettre la qualité.",
+          "Nous garantissons les meilleurs prix sans compromis sur la qualité.",
       },
       qualityAssurance: {
-        title: "Assurance Qualité",
+        title: "Contrôle Qualité",
         description:
-          "Notre processus rigoureux de contrôle qualité et nos visites d'usines garantissent la fiabilité de chaque produit.",
+          "Des vérifications rigoureuses pour garantir des produits fiables.",
       },
       paymentSolutions: {
-        title: "Solutions de Paiement",
+        title: "Paiements Faciles",
         description:
-          "Nous facilitons les paiements avec des solutions sûres et sans tracas pour les transactions internationales.",
+          "Des solutions sûres et fluides pour des transactions internationales.",
       },
       shippingSolutions: {
-        title: "Solutions d'Expédition",
+        title: "Expédition Efficace",
         description:
-          "Nous offrons des options d'expédition aérienne, maritime et express, adaptées pour garantir que vos produits arrivent à temps et en parfait état.",
+          "Options d'expédition adaptées, garantissant des livraisons ponctuelles.",
       },
     },
     features: {
       sectionTitle: "Caractéristiques",
-      sectionHeading: "Ce Qui Nous Rend Différents",
+      sectionHeading: "Pourquoi Nous Choisir",
       sectionDescription:
-        "Découvrez ce qui nous distingue et comment nos services peuvent vous aider à prospérer dans un marché mondial compétitif.",
+        "Découvrez nos atouts et comment nous pouvons vous aider à réussir sur le marché global.",
       factoryVisits: {
         title: "Visites d'Usines",
         description:
-          "Nous organisons des visites d'usines sur place pour garantir des partenariats fiables et une vérification directe de la production.",
+          "Vérifications directes pour établir des partenariats fiables.",
       },
       qualityAssurance: {
         title: "Assurance Qualité",
         description:
-          "Nous effectuons des contrôles qualité approfondis à chaque étape pour garantir que les produits répondent à vos attentes.",
+          "Contrôles approfondis à chaque étape pour répondre à vos attentes.",
       },
       competitivePricing: {
-        title: "Tarification Compétitive",
-        description:
-          "Négociation experte pour garantir les meilleurs prix pour votre entreprise, économisant des coûts sans sacrifier la qualité.",
+        title: "Prix Compétitifs",
+        description: "Des négociations qui allient économies et qualité.",
       },
       languageExpertise: {
         title: "Expertise Linguistique",
         description:
-          "Communication fluide en chinois, aidant à combler l'écart entre clients et fournisseurs.",
+          "Facilitons vos échanges grâce à notre maîtrise des langues.",
       },
       marketNavigation: {
-        title: "Navigation sur le Marché",
-        description:
-          "Orientation sur le marché chinois dynamique avec des années d'expérience et un savoir-faire prouvé.",
+        title: "Navigation Marché",
+        description: "Accompagnement expert dans le marché chinois dynamique.",
       },
       endToEndShipping: {
-        title: "Expédition de bout en bout",
+        title: "Logistique Complète",
         description:
-          "Solutions logistiques efficaces, de l'approvisionnement à la livraison, pour garantir une expédition sans tracas jusqu'à votre porte.",
+          "Des solutions fiables de l'approvisionnement à la livraison.",
       },
       securePayments: {
         title: "Paiements Sécurisés",
-        description:
-          "Nous facilitons des paiements fiables et sécurisés, vous offrant la tranquillité d'esprit dans vos transactions.",
+        description: "Transactions fiables pour votre sérénité.",
       },
       clientSupport: {
         title: "Support Client",
-        description:
-          "Nous accueillons et assistons les clients internationaux en Chine, offrant un soutien personnalisé tout au long de leur parcours.",
+        description: "Assistance personnalisée pour vos besoins en Chine.",
       },
     },
     howItWorks: {
@@ -632,293 +622,293 @@ export const messages = {
     },
     testimonials: {
       sectionTitle: "Témoignages",
-      sectionHeading: "Découvrez ce que disent plus de 100 clients",
+      sectionHeading: "Ce Que Nos Clients Pensent",
     },
     team: {
       sectionTitle: "Équipe",
-      sectionSubtitle: "L'Équipe Rêvée de l'Entreprise",
+      sectionSubtitle: "Notre Équipe Dédiée",
       positions: {
-        "Logistics Expert": "Expert en logistique",
+        "Logistics Expert": "Expert Logistique",
         "Master of Supply Chain Optimization":
-          "Maître en optimisation de la chaîne d'approvisionnement",
-        "Minister of Operations in Morocco": "Ministre des opérations au Maroc",
-        "Regional Director": "Directeur régional",
-        "Quality Assurance Specialist": "Spécialiste de l'Assurance Qualité",
-        "Operations Coordinator": "Coordinateur des Opérations",
+          "Maître en Optimisation Logistique",
+        "Minister of Operations in Morocco":
+          "Directeur des Opérations au Maroc",
+        "Regional Director": "Directeur Régional",
+        "Quality Assurance Specialist": "Expert en Qualité",
+        "Operations Coordinator": "Coordinateur Opérations",
       },
     },
     socials: {
       LinkedIn: "LinkedIn",
-      Whatsapp: "Whatsapp",
+      Whatsapp: "WhatsApp",
       Wechat: "WeChat",
       Instagram: "Instagram",
       X: "X",
     },
     community: {
-      latestDeals: "Intéressé par les DERNIÈRES OFFRES que nous avons ?",
+      latestDeals: "Découvrez Nos Dernières Offres !",
       description:
-        "Rejoignez nos Groupes WhatsApp et Telegram ! Restez à l'affût de nos mises à jour pour découvrir toutes les grandes offres intéressantes ! 🚀",
+        "Rejoignez nos Groupes WhatsApp et Telegram pour les meilleures offres. 🚀",
       joinWhatsApp: "Rejoindre WhatsApp",
       joinTelegram: "Rejoindre Telegram",
     },
     contact: {
       title: "Contactez-Nous",
-      connectWithUs: "Connectez-vous avec Nous",
+      connectWithUs: "Restons en Contact",
       description:
-        "Nous sommes ici pour soutenir les besoins de votre entreprise avec un approvisionnement fiable, une assurance qualité et une logistique efficace. Contactez-nous pour discuter de la façon dont nous pouvons vous aider.",
+        "Nous soutenons votre entreprise grâce à des solutions fiables en approvisionnement, qualité et logistique.",
       firstName: "Prénom",
       lastName: "Nom",
       email: "Email",
       subject: "Sujet",
       message: "Message",
-      selectSubject: "Sélectionnez un sujet",
-      productSourcing: "Approvisionnement en Produits",
-      qualityAssurance: "Assurance Qualité",
-      shippingSolutions: "Solutions d'Expédition",
-      paymentHandling: "Gestion des Paiements",
-      generalInquiry: "Demande Générale",
+      selectSubject: "Choisissez un Sujet",
+      productSourcing: "Approvisionnement",
+      qualityAssurance: "Qualité",
+      shippingSolutions: "Expédition",
+      paymentHandling: "Paiements",
+      generalInquiry: "Informations Générales",
       messagePlaceholder: "Votre message...",
       error: "Erreur",
       errorMessage:
-        "Il y a une erreur dans le formulaire. Veuillez vérifier votre entrée.",
-      submit: "Envoyer le message",
-      findUs: "Trouvez-nous",
-      callUs: "Appelez-nous",
-      mailUs: "Envoyez-nous un email",
-      visitUs: "Visitez-nous",
+        "Une erreur s'est produite. Veuillez vérifier votre saisie.",
+      submit: "Envoyer",
+      findUs: "Localisez-Nous",
+      callUs: "Appelez-Nous",
+      mailUs: "Écrivez-Nous",
+      visitUs: "Visitez-Nous",
       mondayToFriday: "Lundi - Vendredi",
       officeHours: "8h - 16h",
     },
     faq: {
-      title: "Foire Aux Questions",
-      contactUs: "Contactez-nous",
+      title: "FAQ",
+      contactUs: "Contactez-Nous",
       questions: {
         "item-1": "Quels modes de paiement acceptez-vous ?",
-        "item-2": "Faites-vous des envois aériens et maritimes ?",
-        "item-3": "Dans quelles régions opérez-vous ?",
-        "item-4": "Pouvez-vous gérer le dédouanement ?",
+        "item-2": "Proposez-vous expédition aérienne et maritime ?",
+        "item-3": "Quelles régions couvrez-vous ?",
+        "item-4": "Gérez-vous le dédouanement ?",
         "item-5": "Combien de temps prend l'expédition ?",
-        "item-6": "Fournissez-vous un suivi des envois ?",
-        "item-7": "Quels types de produits pouvez-vous importer ou exporter ?",
-        "item-8": "Proposez-vous une assurance pour les envois ?",
-        "item-9":
-          "Pouvez-vous aider avec l'approvisionnement en produits de Chine ?",
-        "item-10": "Gérez-vous des commandes en gros ?",
+        "item-6": "Offrez-vous un suivi des envois ?",
+        "item-7": "Quels produits importez-vous ?",
+        "item-8": "Proposez-vous une assurance expédition ?",
+        "item-9": "Aidez-vous à l'approvisionnement en Chine ?",
+        "item-10": "Gérez-vous les commandes en gros ?",
       },
       answers: {
         "item-1":
-          "Nous acceptons plusieurs modes de paiement, y compris les virements bancaires, les lettres de crédit et les paiements sécurisés en ligne. Contactez-nous pour discuter de l'option qui vous convient le mieux.",
+          "Nous acceptons virements, lettres de crédit et paiements sécurisés. Contactez-nous pour discuter.",
         "item-2":
-          "Oui, nous proposons des options d'expédition tant aérienne que maritime. Le choix dépend de votre délai de livraison, de votre budget et du type de produits expédiés.",
+          "Oui, expédition aérienne et maritime adaptées à vos besoins.",
         "item-3":
-          "Nous opérons à l'échelle mondiale, avec une forte présence en Asie, au Moyen-Orient, en Europe et en Amérique du Nord. Cependant, nous pouvons gérer des expéditions presque partout dans le monde.",
-        "item-4":
-          "Oui, nous proposons des services complets de dédouanement pour garantir que vos produits sont conformes aux réglementations locales.",
+          "Nous opérons globalement, principalement en Asie, Europe, Amérique.",
+        "item-4": "Oui, nous assurons un dédouanement sans souci.",
         "item-5":
-          "Les délais d'expédition varient en fonction du mode de transport et de la destination. Les envois aériens prennent généralement entre 3 et 7 jours, tandis que les envois maritimes peuvent prendre entre 2 et 6 semaines.",
-        "item-6":
-          "Oui, nous fournissons un suivi pour toutes les expéditions afin que vous puissiez suivre vos produits tout au long du processus.",
+          "Dépend du transport. Aérien : 3-7 jours. Maritime : 2-6 semaines.",
+        "item-6": "Oui, suivi complet pour toutes les expéditions.",
         "item-7":
-          "Nous gérons une large gamme de produits, y compris les électroniques, les textiles, les machines et les produits de consommation. Faites-nous savoir vos besoins pour des catégories spécifiques.",
-        "item-8":
-          "Oui, nous pouvons organiser une assurance pour vos envois afin de protéger vos produits contre toute perte ou dommage pendant le transport.",
-        "item-9":
-          "Oui, nous sommes spécialisés dans l'approvisionnement en produits de haute qualité directement auprès des fabricants en Chine. Nous effectuons également des contrôles qualité pour garantir que les produits répondent à vos critères.",
+          "Électroniques, textiles, machines, consommables. Faites-nous part de vos besoins.",
+        "item-8": "Assurance pour protéger contre pertes/dommages.",
+        "item-9": "Oui, nous assurons qualité et conformité produits.",
         "item-10":
-          "Oui, nous avons de l'expérience dans la gestion des commandes en gros et pouvons offrir des prix compétitifs et des solutions logistiques efficaces.",
+          "Oui, gestion efficace et prix compétitifs pour les gros volumes.",
       },
     },
   },
+
   ar: {
     navbar: {
       howItWorks: "كيف نعمل",
-      testimonials: "الشهادات",
-      team: "الفريق",
-      contact: "اتصل بنا",
+      testimonials: "آراء العملاء",
+      team: "فريق العمل",
+      contact: "تواصل معنا",
       faq: "الأسئلة الشائعة",
     },
     hero: {
       badge: {
         new: "جديد",
-        message: "اطلب العينات الآن!",
+        message: "اطلب عيناتك الآن!",
       },
       title: {
         welcome: "مرحبًا بكم في",
         brand: "مجموعة FMI التجارية",
-        slogan: "شريكك الموثوق للتجارة العالمية",
+        slogan: "شريككم الموثوق للتجارة العالمية",
       },
       description:
-        "نحن متخصصون في توريد المنتجات عالية الجودة من الصين وإدارة الخدمات اللوجستية وتقديم حلول دفع وشحن سلسة.",
+        "نحن متخصصون في توفير منتجات عالية الجودة من الصين، وإدارة الخدمات اللوجستية، وتقديم حلول دفع وشحن ميسرة وموثوقة.",
       buttons: {
         getStarted: "ابدأ الآن",
-        mostPopular: "المنتجات الأكثر شيوعًا",
+        mostPopular: "المنتجات الأكثر طلبًا",
       },
     },
     popularProducts: {
-      title: "أكثر منتجاتنا شهرة",
+      title: "أشهر منتجاتنا",
     },
     products: {
       fireExtinguisher: "طفايات الحريق",
       phoneScreen: "شاشات الهواتف",
-      angleGrinder: "ماكينات طحن الزوايا",
+      angleGrinder: "آلات طحن الزوايا",
       safetyEquipment: "معدات السلامة",
-      machine: "آلات",
-      suitcase: "حقائب سفر",
-      jewelry: "مجوهرات",
+      machine: "الآلات",
+      suitcase: "حقائب السفر",
+      jewelry: "المجوهرات",
       phoneAccessories: "إكسسوارات الهواتف",
     },
     benefits: {
       sectionTitle: "المزايا",
-      sectionHeading: "استكشف إمكانيات الصين مع مجموعة FMI التجارية",
+      sectionHeading: "اكتشف إمكانيات الصين مع مجموعة FMI",
       sectionDescription:
-        "تُبسّط مجموعة FMI رحلتك في الصين—بتقديم التفاوض الخبير، ومراقبة الجودة الدقيقة، وحلول لوجستية سلسة. ثق بنا لسد الفجوة بين الطموح العالمي والخبرة المحلية.",
+        "مجموعة FMI تجعل التعامل مع السوق الصينية تجربة بسيطة ومثمرة—من خلال تقديم خدمات تفاوض احترافية، وفحوصات جودة دقيقة، وحلول شحن متكاملة. دعنا نكون جسر النجاح بين طموحاتك العالمية وخبراتنا المحلية.",
       testimonialHeading: "آراء عملائنا",
       testimonialQuote:
-        '"تفاني مجموعة FMI في التفاصيل والتزامها بالجودة تجاوز توقعاتنا. ساعدت عملية مراقبة الجودة الخاصة بهم في ضمان تلبية كل منتج لمعاييرنا، مما وفر علينا الوقت والمال. تجربة غيرت قواعد اللعبة بالنسبة لأعمالنا!"',
-      testimonialAuthor: "أليكس تورنر، مدير الاستيراد، TechSphere Inc.",
+        '"تفاني فريق FMI في التفاصيل والتزامهم بالجودة تجاوز كافة التوقعات. كان دعمهم لمراقبة الجودة مفتاحًا لضمان أن منتجاتنا تلبي أعلى المعايير، مما وفر لنا الوقت والمال. شريك حقيقي لتوسيع أعمالنا!"',
+      testimonialAuthor: "أليكس تورنر، مدير الاستيراد - TechSphere Inc.",
       expertNegotiation: {
-        title: "التفاوض الخبير",
+        title: "تفاوض احترافي",
         description:
-          "نستفيد من خبرتنا لتأمين أفضل الأسعار لك، مما يضمن القيمة دون المساومة على الجودة.",
+          "نستفيد من خبراتنا الواسعة لتأمين أفضل العروض التنافسية دون المساومة على جودة المنتجات.",
       },
       qualityAssurance: {
         title: "ضمان الجودة",
         description:
-          "تضمن عملية مراقبة الجودة الدقيقة وزيارات المصانع موثوقية كل منتج.",
+          "عمليات مراقبة دقيقة تشمل زيارات المصانع لضمان جودة كل منتج يصل إليك.",
       },
       paymentSolutions: {
-        title: "حلول الدفع",
+        title: "حلول دفع مبتكرة",
         description:
-          "نُبسط عمليات الدفع، ونوفر حلولاً آمنة وسهلة للمعاملات الدولية.",
+          "نوفر حلول دفع آمنة وسهلة للمعاملات الدولية، مما يجعل عملية الشراء مريحة وخالية من التحديات.",
       },
       shippingSolutions: {
-        title: "حلول الشحن",
+        title: "خدمات شحن متكاملة",
         description:
-          "نقدم خيارات شحن جوي وبحري وسريع مخصصة، لضمان وصول منتجاتك في الوقت المناسب وبحالة مثالية.",
+          "نقدم خيارات شحن جوي، وبحري، وسريع مخصصة لضمان وصول منتجاتك في الوقت وبالحالة المثالية.",
       },
     },
     features: {
       sectionTitle: "الميزات",
-      sectionHeading: "ما الذي يجعلنا مختلفين",
+      sectionHeading: "ما الذي يميزنا؟",
       sectionDescription:
-        "اكتشف ما يميزنا وكيف يمكن لخدماتنا مساعدتك على النجاح في سوق عالمي تنافسي.",
+        "تعرف على الخدمات التي تجعلنا الاختيار الأفضل، وكيف يمكننا مساعدتك في تحقيق النجاح في السوق العالمية.",
       factoryVisits: {
-        title: "زيارات المصانع",
+        title: "زيارات ميدانية للمصانع",
         description:
-          "نجري زيارات ميدانية للمصانع لضمان شراكات موثوقة وتحقق الجودة بشكل مباشر.",
+          "نتحقق مباشرة من كفاءة المصانع وشركائنا لضمان توافق المنتجات مع متطلباتك.",
       },
       qualityAssurance: {
-        title: "ضمان الجودة",
+        title: "إجراءات صارمة للجودة",
         description:
-          "فحوصات جودة شاملة في كل مرحلة لتقديم منتجات تلبي توقعاتك.",
+          "نفحص المنتجات بشكل شامل لضمان تقديم حلول عالية الجودة تُرضي توقعاتك.",
       },
       competitivePricing: {
         title: "أسعار تنافسية",
         description:
-          "تفاوض احترافي للحصول على أفضل الأسعار لعملك، مما يوفر التكاليف دون التنازل عن الجودة.",
+          "تفاوض احترافي للحصول على أفضل قيمة ممكنة دون المساس بجودة المنتج.",
       },
       languageExpertise: {
-        title: "الخبرة اللغوية",
+        title: "إتقان لغوي",
         description:
-          "تواصل سلس باللغة الصينية، يساعد على سد الفجوة بين العملاء والموردين.",
+          "نساعد في إزالة حواجز اللغة لضمان تواصل سلس وفعال مع الموردين الصينيين.",
       },
       marketNavigation: {
-        title: "التنقل في السوق",
-        description: "توجيهك خلال سوق الصين الديناميكي بخبرة سنوات مثبتة.",
+        title: "خبرة في السوق",
+        description:
+          "إرشادات مخصصة تساعدك على التنقل في السوق الصينية الديناميكية بثقة ونجاح.",
       },
       endToEndShipping: {
-        title: "الشحن من البداية إلى النهاية",
+        title: "خدمات شحن شاملة",
         description:
-          "حلول لوجستية فعالة، من التوريد إلى الشحن، لضمان توصيل سلس إلى عتبة داركم.",
+          "ندير جميع الجوانب اللوجستية لضمان وصول بضائعك من المصدر إلى الوجهة بسهولة وسرعة.",
       },
       securePayments: {
         title: "مدفوعات آمنة",
-        description: "تسهيلات دفع موثوقة وآمنة، تمنحك راحة البال في معاملاتك.",
+        description:
+          "خدمات دفع موثوقة وآمنة تضمن حماية كاملة لبياناتك ومعاملاتك.",
       },
       clientSupport: {
-        title: "دعم العملاء",
+        title: "دعم عملاء مميز",
         description:
-          "نرحب بالعملاء الدوليين ونساعدهم عند زيارتهم للصين، مع تقديم دعم مخصص طوال رحلتهم.",
+          "نقدم إرشادات متكاملة للعملاء الدوليين خلال زياراتهم للصين لضمان تجربة تجارية سلسة.",
       },
     },
     howItWorks: {
-      sectionTitle: "كيف يعمل",
-      sectionHeading: "عملية خطوة بخطوة",
+      sectionTitle: "طريقة العمل",
+      sectionHeading: "خطوات عملية منظمة",
       negotiate: {
         badgeTitle: "التفاوض",
-        title: "احصل على أفضل الأسعار",
+        title: "أفضل العروض التنافسية",
         description:
-          "تضمن مهاراتنا التفاوضية الخبيرة حصولك على أفضل الأسعار التنافسية دون التنازل عن الجودة. نحن نتعامل مع مناقشات الأسعار لضمان القيمة المثلى لعملك.",
+          "بفضل مهاراتنا التفاوضية، نضمن لك الحصول على الأسعار المثالية التي تتوافق مع معاييرك وميزانيتك.",
       },
       inspect: {
         badgeTitle: "التفتيش",
-        title: "مراقبة وضمان الجودة",
+        title: "إجراءات مراقبة الجودة",
         description:
-          "نجري فحوصات جودة شاملة في كل مرحلة من مراحل الإنتاج لضمان أن المنتجات تلبي المعايير الدولية، مما يوفر لك راحة البال مع كل طلب.",
+          "نُنفذ فحوصات شاملة للتأكد من أن المنتجات تلبي معاييرك الدولية بدقة وفعالية.",
       },
       visit: {
-        badgeTitle: "زيارة",
-        title: "زيارات المصانع في الموقع",
+        badgeTitle: "الزيارات الميدانية",
+        title: "فحص وتقييم المصانع",
         description:
-          "نقوم بتنظيم وإجراء زيارات ميدانية للمصانع لضمان شراكات موثوقة والتحقق المباشر من منشآت الإنتاج، للتأكد من أن كل شيء يسير بسلاسة.",
+          "نتحقق شخصيًا من منشآت الإنتاج لضمان شراكات موثوقة وتجربة عمل خالية من المخاطر.",
       },
       support: {
         badgeTitle: "الدعم",
-        title: "دعم العملاء المخصص",
+        title: "دعم متكامل للعملاء",
         description:
-          "نقدم دعمًا مخصصًا للعملاء الدوليين الذين يزورون الصين، ونرشدك خلال العملية لضمان تلبية جميع احتياجاتك بمساعدة الخبراء.",
+          "نقدم إرشادات مهنية وخدمات مخصصة لضمان أن جميع متطلباتك يتم تلبيتها بكفاءة.",
       },
     },
     testimonials: {
-      sectionTitle: "الشهادات",
-      sectionHeading: "استمع إلى آراء أكثر من 100 من عملائنا",
+      sectionTitle: "آراء العملاء",
+      sectionHeading: "شهادات أكثر من 100 عميل راضٍ",
     },
     team: {
-      sectionTitle: "الفريق",
-      sectionSubtitle: "فريق الأحلام في الشركة",
+      sectionTitle: "فريق العمل",
+      sectionSubtitle: "فريق محترف يقود النجاح",
       positions: {
-        "Logistics Expert": "خبير في اللوجستيات",
+        "Logistics Expert": "خبير في الخدمات اللوجستية",
         "Master of Supply Chain Optimization": "خبير في تحسين سلسلة التوريد",
-        "Minister of Operations in Morocco": "وزير العمليات في المغرب",
-        "Regional Director": "مدير إقليمي",
-        "Quality Assurance Specialist": "أخصائي ضمان الجودة",
+        "Minister of Operations in Morocco": "مدير العمليات بالمغرب",
+        "Regional Director": "المدير الإقليمي",
+        "Quality Assurance Specialist": "أخصائي مراقبة الجودة",
         "Operations Coordinator": "منسق العمليات",
       },
     },
     socials: {
-      LinkedIn: "لينكد إن",
+      LinkedIn: "لينكدإن",
       Whatsapp: "واتساب",
-      Wechat: "وي شات",
+      Wechat: "وي تشات",
       Instagram: "إنستغرام",
       X: "إكس",
     },
     community: {
-      latestDeals: "هل أنت مهتم بأحدث العروض التي لدينا؟",
+      latestDeals: "مهتم بالعروض الأحدث لدينا؟",
       description:
-        "انضم إلى مجموعاتنا النشطة على واتساب وتيليجرام! استمر في متابعة تحديثاتنا للحصول على أي عروض قد تهمك! 🚀",
-      joinWhatsApp: "انضم إلى واتساب",
-      joinTelegram: "انضم إلى تيليجرام",
+        "انضم إلى مجموعاتنا النشطة على واتساب وتيليجرام لمتابعة أفضل العروض وتحديثاتنا المستمرة! 🚀",
+      joinWhatsApp: "الانضمام إلى واتساب",
+      joinTelegram: "الانضمام إلى تيليجرام",
     },
     contact: {
       title: "تواصل معنا",
-      connectWithUs: "تواصل معنا",
+      connectWithUs: "ابقَ على اتصال معنا",
       description:
-        "نحن هنا لدعم احتياجات عملك من خلال التوريد الموثوق، وضمان الجودة، واللوجستيات الفعّالة. تواصل معنا لمناقشة كيفية مساعدتك.",
+        "نحن هنا لمساعدتك في تلبية احتياجات عملك من خلال خدمات موثوقة تشمل التوريد، وضمان الجودة، وحلول الشحن المتكاملة. لا تتردد في الاتصال بنا!",
       firstName: "الاسم الأول",
       lastName: "اسم العائلة",
       email: "البريد الإلكتروني",
       subject: "الموضوع",
       message: "الرسالة",
       selectSubject: "اختر موضوعًا",
-      productSourcing: "مصادر المنتجات",
+      productSourcing: "توريد المنتجات",
       qualityAssurance: "ضمان الجودة",
       shippingSolutions: "حلول الشحن",
-      paymentHandling: "التعامل مع المدفوعات",
+      paymentHandling: "إدارة المدفوعات",
       generalInquiry: "استفسار عام",
-      messagePlaceholder: "رسالتك...",
+      messagePlaceholder: "أدخل رسالتك هنا...",
       error: "خطأ",
-      errorMessage: "هناك خطأ في النموذج. من فضلك تحقق من مدخلاتك.",
-      submit: "إرسال الرسالة",
+      errorMessage:
+        "حدث خطأ أثناء إرسال النموذج. تحقق من البيانات المدخلة وحاول مرة أخرى.",
+      submit: "إرسال",
       findUs: "موقعنا",
       callUs: "اتصل بنا",
       mailUs: "راسلنا",
@@ -928,42 +918,26 @@ export const messages = {
     },
     faq: {
       title: "الأسئلة الشائعة",
-      commonQuestions: "الأسئلة الشائعة",
-      stillHaveQuestions: "هل لديك أسئلة أخرى؟",
-      contactUs: "اتصل بنا",
+      commonQuestions: "إجابات على استفساراتكم",
+      stillHaveQuestions: "ما زلت بحاجة إلى مساعدة؟",
+      contactUs: "تواصل معنا",
       questions: {
-        "item-1": "ما طرق الدفع التي تقبلها؟",
-        "item-2": "هل تشحنون بالطائرات أو السفن؟",
-        "item-3": "في أي مناطق تعملون؟",
-        "item-4": "هل يمكنكم التعامل مع التخليص الجمركي؟",
-        "item-5": "كم من الوقت تستغرق الشحنات؟",
-        "item-6": "هل توفرون تتبع الشحنات؟",
-        "item-7": "ما أنواع المنتجات التي يمكنكم استيرادها أو تصديرها؟",
-        "item-8": "هل تقدمون التأمين للشحنات؟",
-        "item-9": "هل يمكنكم المساعدة في مصادر المنتجات من الصين؟",
-        "item-10": "هل تديرون الطلبات بالجملة؟",
+        "item-1": "ما هي وسائل الدفع المتاحة؟",
+        "item-2": "هل تقدمون ضمانًا للمنتجات التي يتم شحنها؟",
+        "item-3": "هل يمكنكم التفاوض مع الموردين باسمي؟",
+        "item-4": "كم من الوقت تستغرق عملية التوريد والشحن؟",
+        "item-5": "كيف أضمن جودة المنتجات؟",
       },
       answers: {
-        "item-1":
-          "نقبل طرق الدفع المختلفة، بما في ذلك التحويلات البنكية، خطابات الاعتماد، والمدفوعات عبر الإنترنت الآمنة. تواصل معنا لمناقشة الخيار الأفضل لاحتياجاتك.",
+        "item-1": "نعم، نوفر خيارات دفع متنوعة وآمنة لتلبية احتياجات عملائنا.",
         "item-2":
-          "نعم، نقدم خيارات الشحن الجوية والبحرية. يعتمد الخيار على الجدول الزمني الخاص بك، والميزانية، وطبيعة البضائع المنقولة.",
+          "نعم، نجري عمليات فحص جودة صارمة لضمان أن جميع المنتجات المرسلة تتطابق مع المواصفات المطلوبة.",
         "item-3":
-          "نحن نعمل على مستوى العالم، مع تركيز قوي على آسيا، والشرق الأوسط، وأوروبا، وأمريكا الشمالية. ومع ذلك، يمكننا التعامل مع الشحنات إلى أي موقع تقريبًا حول العالم.",
+          "بالطبع، يمكن لفريقنا التفاوض مع الموردين مباشرة نيابة عنك لتحقيق أفضل الشروط التجارية.",
         "item-4":
-          "نعم، نقدم خدمات التخليص الجمركي الشاملة لضمان أن البضائع الخاصة بك تتوافق مع جميع اللوائح والمتطلبات المحلية.",
+          "يعتمد الوقت على المنتج وطريقة الشحن، لكننا نعمل بجد لتقليل الزمن إلى أدنى حد ممكن.",
         "item-5":
-          "تختلف أوقات الشحن حسب وسيلة النقل والوجهة. عادة ما تستغرق الشحنات الجوية 3-7 أيام، في حين أن الشحنات البحرية قد تستغرق من 2 إلى 6 أسابيع.",
-        "item-6":
-          "نعم، نقدم تتبعًا لجميع الشحنات بحيث يمكنك متابعة البضائع الخاصة بك طوال عملية الشحن.",
-        "item-7":
-          "نتعامل مع مجموعة واسعة من السلع، بما في ذلك الإلكترونيات، والمنسوجات، والآلات، والمنتجات الاستهلاكية. أخبرنا بمتطلباتك لفئات المنتجات المحددة.",
-        "item-8":
-          "نعم، يمكننا ترتيب التأمين لشحناتك لحماية بضائعك ضد الفقدان أو التلف أثناء النقل.",
-        "item-9":
-          "نعم، نحن متخصصون في توفير المنتجات عالية الجودة مباشرة من الشركات المصنعة في الصين. نقوم أيضًا بإجراء فحوصات الجودة لضمان أن البضائع تتوافق مع معاييرك.",
-        "item-10":
-          "نعم، لدينا خبرة في إدارة الطلبات بالجملة ويمكننا توفير تسعير تنافسي وحلول لوجستية فعالة.",
+          "نتبع إجراءات مراقبة جودة شاملة تشمل زيارات المصنع ومراجعة المنتجات بدقة قبل شحنها.",
       },
     },
   },

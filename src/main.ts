@@ -1,14 +1,14 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/index.css";
-import { injectSpeedInsights } from "@vercel/speed-insights";
+// import { injectSpeedInsights } from "@vercel/speed-insights";
 
 // Import vue-i18n and the translations
 import { createI18n } from "vue-i18n";
 import { messages } from "./locales";
 
 // Initialize Vercel speed insights
-injectSpeedInsights();
+// injectSpeedInsights();
 
 // Detect the user's browser/system language
 const userLanguage = navigator.language.split("-")[0] || "en";
