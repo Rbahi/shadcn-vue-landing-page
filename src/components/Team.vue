@@ -14,6 +14,9 @@ import WechatIcon from "@/icons/WechatIcon.vue";
 import InstagramIcon from "@/icons/InstagramIcon.vue";
 
 import { useI18n } from "vue-i18n"; // Translation setup
+import Popover from "./ui/popover/Popover.vue";
+import PopoverTrigger from "./ui/popover/PopoverTrigger.vue";
+import PopoverContent from "./ui/popover/PopoverContent.vue";
 
 interface TeamProps {
   imageUrl: string;
@@ -25,7 +28,8 @@ interface TeamProps {
 
 interface SocialNetworkProps {
   name: string;
-  url: string;
+  url?: string;
+  imageUrl?: string;
 }
 
 const teamList: TeamProps[] = [
@@ -47,6 +51,10 @@ const teamList: TeamProps[] = [
         name: "Instagram",
         url: "https://www.instagram.com/a.rbahi",
       },
+      {
+        name: "Wechat",
+        imageUrl: "/team/ayoub-wechat-white.png",
+      },
     ],
   },
   {
@@ -67,10 +75,10 @@ const teamList: TeamProps[] = [
         name: "Instagram",
         url: "https://www.instagram.com/yassine.sheriff",
       },
-      // {
-      //   name: "Wechat",
-      //   url: "https://www.instagram.com/yassine.sheriff",
-      // },
+      {
+        name: "Wechat",
+        imageUrl: "/team/yassine-wechat-white.png",
+      },
     ],
   },
   {
@@ -161,16 +169,36 @@ const { t } = useI18n(); // Using translations
         </CardContent>
 
         <CardFooter class="space-x-4 mt-auto">
-          <a
-            v-for="{ name, url } in socialNetworks"
-            :key="name"
-            :href="url"
-            target="_blank"
-            class="hover:opacity-80 transition-all"
-            :aria-label="`Visit our ${t(`socials.${name}`)} page`"
-          >
-            <component :is="socialIcon(name)" class="h-8 w-8" />
-          </a>
+          <template v-for="{ name, url, imageUrl } in socialNetworks">
+            <a
+              v-if="name !== 'Wechat'"
+              :key="name"
+              :href="url"
+              target="_blank"
+              class="hover:opacity-80 transition-all"
+              :aria-label="`Visit our ${t(`socials.${name}`)} page`"
+            >
+              <component :is="socialIcon(name)" class="h-8 w-8" />
+            </a>
+
+            <div v-else key="Wechat" class="relative  ">
+              <Popover>
+                <PopoverTrigger
+                  as="button"
+                  class="hover:opacity-80 transition-all"
+                >
+                  <WechatIcon class="h-8 w-8 mt-1" />
+                </PopoverTrigger>
+                <PopoverContent class="bg-muted p-0 overflow-hidden rounded-xl shadow-lg">
+                  <img
+                    :src="imageUrl"
+                    alt="WeChat QR Code"
+                    class="w-80  object-contain"
+                  />
+                </PopoverContent>
+              </Popover>
+            </div>
+          </template>
         </CardFooter>
       </Card>
     </div>
