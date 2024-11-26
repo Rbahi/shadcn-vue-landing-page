@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 
-const videos = ref(["/hero-videos/cargosz.mp4", "/hero-videos/cargoship.mp4", "/hero-videos/cargo1.mp4"]);
+const videos = ref([
+  "/hero-videos/cargosz.mp4",
+  "/hero-videos/cargoship.mp4",
+  "/hero-videos/cargo1.mp4",
+]);
 const currentVideoIndex = ref(0);
 const fading = ref(false);
 
@@ -66,7 +70,7 @@ import { ArrowRight } from "lucide-vue-next";
         </div>
       </div>
 
-      <div class="relative aspect-video w-full group mt-14">
+      <div class="relative aspect-video group mt-14">
         <!-- gradient shadow -->
         <div
           class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
@@ -74,7 +78,7 @@ import { ArrowRight } from "lucide-vue-next";
 
         <div class="relative">
           <video
-            class="w-full md:w-[1200px] mx-auto rounded-2xl relative leading-none flex items-center border border-t-2 border-t-primary/30 transition-all duration-1000"
+            class="w-full md:w-[1200px] mx-auto rounded-2xl relative leading-none flex items-center transition-all duration-1000"
             autoplay
             muted
             loop
@@ -86,7 +90,7 @@ import { ArrowRight } from "lucide-vue-next";
 
         <!-- gradient effect img -->
         <div
-          class="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"
+          class="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background"
         ></div>
       </div>
     </div>
