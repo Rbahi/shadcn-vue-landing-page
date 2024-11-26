@@ -70,7 +70,7 @@ import { ArrowRight } from "lucide-vue-next";
         </div>
       </div>
 
-      <div class="relative aspect-video group mt-14">
+      <div class="relative aspect-video w-full group mt-14">
         <!-- gradient shadow -->
         <div
           class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
