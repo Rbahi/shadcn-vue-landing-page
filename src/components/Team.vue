@@ -181,7 +181,7 @@ const { t } = useI18n(); // Using translations
               <component :is="socialIcon(name)" class="h-8 w-8" />
             </a>
 
-            <div v-else key="Wechat" class="relative  ">
+            <div v-else key="Wechat" class="relative">
               <Popover>
                 <PopoverTrigger
                   as="button"
@@ -189,11 +189,14 @@ const { t } = useI18n(); // Using translations
                 >
                   <WechatIcon class="h-8 w-8 mt-1" />
                 </PopoverTrigger>
-                <PopoverContent class="bg-muted p-0 overflow-hidden rounded-xl shadow-lg">
+                <PopoverContent
+                  class="bg-muted p-0 overflow-hidden rounded-xl shadow-lg"
+                >
                   <img
+                    loading="lazy"
                     :src="imageUrl"
                     alt="WeChat QR Code"
-                    class="w-80  object-contain"
+                    class="w-80 object-contain"
                   />
                 </PopoverContent>
               </Popover>
