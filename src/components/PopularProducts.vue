@@ -10,35 +10,35 @@ interface productsProps {
 
 const products: productsProps[] = [
   {
-    image: "./src/assets/products/fire-extinguisher.png",
+    image: "/products/fire-extinguisher.png",
     name: "products.fireExtinguisher",
   },
   {
-    image: "./src/assets/products/phone-screen.png",
+    image: "/products/phone-screen.png",
     name: "products.phoneScreen",
   },
   {
-    image: "./src/assets/products/angle-grinder.png",
+    image: "/products/angle-grinder.png",
     name: "products.angleGrinder",
   },
   {
-    image: "./src/assets/products/safety-equipment.png",
+    image: "/products/safety-equipment.png",
     name: "products.safetyEquipment",
   },
   {
-    image: "./src/assets/products/machine.png",
+    image: "/products/machine.png",
     name: "products.machine",
   },
   {
-    image: "./src/assets/products/suitcase.png",
+    image: "/products/suitcase.png",
     name: "products.suitcase",
   },
   {
-    image: "./src/assets/products/jewelry.png",
+    image: "/products/jewelry.png",
     name: "products.jewelry",
   },
   {
-    image: "./src/assets/products/phone-accessories.png",
+    image: "/products/phone-accessories.png",
     name: "products.phoneAccessories",
   },
 ];
