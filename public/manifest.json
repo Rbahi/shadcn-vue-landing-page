@@ -1,0 +1,26 @@
+{
+  "name": "FMI Trading Group",
+  "short_name": "FMI Trading",
+  "description": "FMI Trading Group specializes in sourcing quality products from China, managing logistics, and offering seamless shipping solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e7945b",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

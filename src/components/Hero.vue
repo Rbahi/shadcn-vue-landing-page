@@ -57,11 +57,13 @@ import { ArrowRight } from "lucide-vue-next";
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button class="w-5/6 md:w-1/4 font-bold group/arrow">
-            {{ $t("hero.buttons.getStarted") }}
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
+          <Button as-child class="w-5/6 md:w-1/4 font-bold group/arrow animate-pulse duration-1000 shadow-2xl">
+            <a href="https://wa.me/8615157190084" target="_blank" class="flex">
+              {{ $t("hero.buttons.getStarted") }}
+              <ArrowRight
+                class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+              />
+            </a>
           </Button>
 
           <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
