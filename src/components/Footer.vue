@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useColorMode } from "@vueuse/core";
 import Separator from "./ui/separator/Separator.vue";
+
 const mode = useColorMode();
 </script>
 
@@ -10,6 +11,7 @@ const mode = useColorMode();
       <div
         class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8"
       >
+        <!-- Logo Section -->
         <div class="col-span-full xl:col-span-2">
           <a href="#" class="flex font-bold items-center">
             <img
@@ -21,99 +23,101 @@ const mode = useColorMode();
               class="w-9 h-9 mr-2"
               alt="Logo"
             />
-
-            <h3 class="text-2xl">FMI Trading Group</h3>
+            <h3 class="text-2xl">{{ $t("footer.logo.title") }}</h3>
           </a>
         </div>
 
+        <!-- Contact Section -->
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Contact</h3>
-
+          <h3 class="font-bold text-lg">{{ $t("footer.contact.title") }}</h3>
           <div>
             <a
               target="_blank"
               href="https://wa.me/8615157190084"
               class="opacity-60 hover:opacity-100"
             >
-              WhatsApp
+              {{ $t("footer.contact.whatsapp") }}
             </a>
           </div>
-
           <div>
             <a
               target="_blank"
               href="https://m.me/131814057009755"
               class="opacity-60 hover:opacity-100"
             >
-              Facebook
+              {{ $t("footer.contact.facebook") }}
             </a>
           </div>
-
           <div>
             <a
-            target="_blank"
+              target="_blank"
               href="https://ig.me/m/fmitradinggroup"
               class="opacity-60 hover:opacity-100"
             >
-              Instagram
+              {{ $t("footer.contact.instagram") }}
             </a>
           </div>
         </div>
 
+        <!-- Help Section -->
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Help</h3>
+          <h3 class="font-bold text-lg">{{ $t("footer.help.title") }}</h3>
           <div>
             <a href="#contact" class="opacity-60 hover:opacity-100">
-              Contact Us
+              {{ $t("footer.help.contactUs") }}
             </a>
           </div>
-
           <div>
-            <a href="#faq" class="opacity-60 hover:opacity-100"> FAQ </a>
+            <a href="#faq" class="opacity-60 hover:opacity-100">
+              {{ $t("footer.help.faq") }}
+            </a>
           </div>
-
           <div>
             <a href="#testimonials" class="opacity-60 hover:opacity-100">
-              Feedback
+              {{ $t("footer.help.feedback") }}
             </a>
           </div>
         </div>
 
+        <!-- Socials Section -->
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Socials</h3>
+          <h3 class="font-bold text-lg">{{ $t("footer.socials.title") }}</h3>
           <div>
             <a
               target="_blank"
               href="https://www.facebook.com/fmitradinggroup"
               class="opacity-60 hover:opacity-100"
             >
-              Facebook
+              {{ $t("footer.socials.facebook") }}
             </a>
           </div>
-
           <div>
             <a
               target="_blank"
               href="https://www.instagram.com/fmitradinggroup"
               class="opacity-60 hover:opacity-100"
             >
-              Instagram
+              {{ $t("footer.socials.instagram") }}
             </a>
           </div>
         </div>
       </div>
 
+      <!-- Separator -->
       <Separator class="my-6" />
-      <section className="">
-        <h3 class="">
-          © 2025<a
+
+      <!-- Footer Disclaimer -->
+      <section>
+        <h3>
+          © 2025
+          <a
             target="_blank"
             href="https://instagram.com/"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            class="text-primary transition-all border-primary hover:border-b-2"
           >
-            FMI Trading Group Ltd.
+            {{ $t("footer.disclaimer.companyName") }}
           </a>
-          All Rights Reserved
+          {{ $t("footer.disclaimer.rightsReserved") }}
         </h3>
       </section>
     </div>

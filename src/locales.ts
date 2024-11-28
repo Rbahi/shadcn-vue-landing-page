@@ -240,6 +240,30 @@ export const messages = {
           "Yes, we are experienced in managing bulk orders and can provide competitive pricing and efficient logistics solutions.",
       },
     },
+    footer: {
+      logo: { title: "FMI Trading Group" },
+      contact: {
+        title: "Contact",
+        whatsapp: "WhatsApp",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      help: {
+        title: "Help",
+        contactUs: "Contact Us",
+        faq: "FAQ",
+        feedback: "Feedback",
+      },
+      socials: {
+        title: "Socials",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      disclaimer: {
+        companyName: "FMI Trading Group Ltd.",
+        rightsReserved: "All Rights Reserved",
+      },
+    },
   },
   es: {
     navbar: {
@@ -478,6 +502,30 @@ export const messages = {
           "Sí, manejamos pedidos al por mayor con logística eficiente.",
       },
     },
+    footer: {
+      logo: { title: "Grupo Comercial FMI" },
+      contact: {
+        title: "Contáctenos",
+        whatsapp: "WhatsApp",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      help: {
+        title: "Ayuda",
+        contactUs: "Contáctanos",
+        faq: "Preguntas Frecuentes",
+        feedback: "Comentarios",
+      },
+      socials: {
+        title: "Redes Sociales",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      disclaimer: {
+        companyName: "FMI Trading Group Ltd.",
+        rightsReserved: "Todos los derechos reservados",
+      },
+    },
   },
 
   fr: {
@@ -714,6 +762,30 @@ export const messages = {
           "Oui, gestion efficace et prix compétitifs pour les gros volumes.",
       },
     },
+    footer: {
+      logo: { title: "Groupe Commercial FMI" },
+      contact: {
+        title: "Contactez-nous",
+        whatsapp: "WhatsApp",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      help: {
+        title: "Assistance",
+        contactUs: "Nous Contacter",
+        faq: "FAQ",
+        feedback: "Retour d'information",
+      },
+      socials: {
+        title: "Réseaux Sociaux",
+        facebook: "Facebook",
+        instagram: "Instagram",
+      },
+      disclaimer: {
+        companyName: "FMI Trading Group Ltd.",
+        rightsReserved: "Tous droits réservés",
+      },
+    },
   },
 
   ar: {
@@ -938,6 +1010,30 @@ export const messages = {
           "يعتمد الوقت على المنتج وطريقة الشحن، لكننا نعمل بجد لتقليل الزمن إلى أدنى حد ممكن.",
         "item-5":
           "نتبع إجراءات مراقبة جودة شاملة تشمل زيارات المصنع ومراجعة المنتجات بدقة قبل شحنها.",
+      },
+    },
+    footer: {
+      logo: { title: "مجموعة FMI للتجارة" },
+      contact: {
+        title: "تواصل معنا",
+        whatsapp: "واتساب",
+        facebook: "فيسبوك",
+        instagram: "إنستغرام",
+      },
+      help: {
+        title: "المساعدة",
+        contactUs: "اتصل بنا",
+        faq: "الأسئلة الشائعة",
+        feedback: "التعليقات",
+      },
+      socials: {
+        title: "وسائل التواصل الاجتماعي",
+        facebook: "فيسبوك",
+        instagram: "إنستغرام",
+      },
+      disclaimer: {
+        companyName: "شركة FMI للتجارة المحدودة",
+        rightsReserved: "جميع الحقوق محفوظة",
       },
     },
   },
