@@ -79,9 +79,13 @@ const FAQList: FAQProps[] = [
 <template>
   <section id="faq" class="container md:w-[700px] py-24 sm:py-32">
     <div class="text-center mb-8">
-      <h2 class="text-lg text-primary text-center mb-2 tracking-wider">{{ $t('faq.title') }}</h2>
+      <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
+        {{ $t("faq.title") }}
+      </h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold">{{ $t('faq.commonQuestions') }}</h2>
+      <h2 class="text-3xl md:text-4xl text-center font-bold">
+        {{ $t("faq.commonQuestions") }}
+      </h2>
     </div>
 
     <Accordion type="single" collapsible class="AccordionRoot">
@@ -90,17 +94,19 @@ const FAQList: FAQProps[] = [
         :key="item.value"
         :value="item.value"
       >
-        <AccordionTrigger class="text-left">{{ $t('faq.questions.' + item.value) }}</AccordionTrigger>
+        <AccordionTrigger class="text-left">{{
+          $t("faq.questions." + item.value)
+        }}</AccordionTrigger>
 
-        <AccordionContent>{{ $t('faq.answers.' + item.value) }}</AccordionContent>
+        <AccordionContent>{{
+          $t("faq.answers." + item.value)
+        }}</AccordionContent>
       </AccordionItem>
     </Accordion>
 
     <h3 class="font-medium mt-4">
-      {{ $t('faq.stillHaveQuestions') }}
-      <a href="#" class="text-muted-foreground">
-        <a href="#contact" class="underline">{{ $t('faq.contactUs') }}</a>
-      </a>
+      {{ $t("faq.stillHaveQuestions") }}
+      <a href="#contact" class="underline text-muted-foreground">{{ $t("faq.contactUs") }}</a>
     </h3>
   </section>
 </template>
