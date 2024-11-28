@@ -34,7 +34,7 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "/team/ayoub.jpg",
+    imageUrl: "./src/assets/team/ayoub.jpg",
     firstName: "Ayoub",
     lastName: "Rbahi",
     positions: ["Quality Assurance Specialist", "Operations Coordinator"],
@@ -53,12 +53,12 @@ const teamList: TeamProps[] = [
       },
       {
         name: "Wechat",
-        imageUrl: "/team/ayoub-wechat-white.png",
+        imageUrl: "./src/assets/team/ayoub-wechat-white.png",
       },
     ],
   },
   {
-    imageUrl: "/team/yassine.jpg",
+    imageUrl: "./src/assets/team/yassine.jpg",
     firstName: "Yassine",
     lastName: "Cherif-Riahi",
     positions: ["Logistics Expert", "Master of Supply Chain Optimization"],
@@ -77,7 +77,7 @@ const teamList: TeamProps[] = [
       },
       {
         name: "Wechat",
-        imageUrl: "/team/yassine-wechat-white.png",
+        imageUrl: "./src/assets/team/yassine-wechat-white.png",
       },
     ],
   },

@@ -17,8 +17,8 @@ const mode = useColorMode();
             <img
               :src="
                 mode == 'light'
-                  ? '/round-logo-white.png'
-                  : '/round-logo-black.png'
+                  ? './src/assets/round-logo-white.png'
+                  : './src/assets/round-logo-black.png'
               "
               class="w-9 h-9 mr-2"
               alt="Logo"

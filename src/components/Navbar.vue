@@ -100,7 +100,7 @@ const languageNames: { [key: string]: string } = {
     <a href="/" class="font-bold text-lg flex items-center">
       <img
         :src="
-          mode == 'light' ? '/round-logo-white.png' : '/round-logo-black.png'
+          mode == 'light' ? './src/assets/round-logo-white.png' : './src/assets/round-logo-black.png'
         "
         class="w-9 h-9 mr-2"
         alt="Logo"
@@ -126,8 +126,8 @@ const languageNames: { [key: string]: string } = {
                   <img
                     :src="
                       mode == 'light'
-                        ? '/round-logo-white.png'
-                        : '/round-logo-black.png'
+                        ? './src/assets/round-logo-white.png'
+                        : './src/assets/round-logo-black.png'
                     "
                     class="w-9 h-9 mr-2"
                     alt="Logo"

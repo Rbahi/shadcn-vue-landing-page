@@ -14,25 +14,25 @@ const HowItWorksList: HowItWorksProps[] = [
     badgeTitle: "howItWorks.negotiate.badgeTitle",
     title: "howItWorks.negotiate.title",
     description: "howItWorks.negotiate.description",
-    image: "/how-it-works/step1.jpeg", // Replace with relevant image
+    image: "./src/assets/how-it-works/step1.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.inspect.badgeTitle",
     title: "howItWorks.inspect.title",
     description: "howItWorks.inspect.description",
-    image: "/how-it-works/step2.jpeg", // Replace with relevant image
+    image: "./src/assets/how-it-works/step2.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.visit.badgeTitle",
     title: "howItWorks.visit.title",
     description: "howItWorks.visit.description",
-    image: "/how-it-works/step3.jpeg", // Replace with relevant image
+    image: "./src/assets/how-it-works/step3.jpeg", // Replace with relevant image
   },
   {
     badgeTitle: "howItWorks.support.badgeTitle",
     title: "howItWorks.support.title",
     description: "howItWorks.support.description",
-    image: "/how-it-works/step4.jpeg", // Replace with relevant image
+    image: "./src/assets/how-it-works/step4.jpeg", // Replace with relevant image
   },
 ];
 </script>
